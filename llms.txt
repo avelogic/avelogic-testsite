@@ -1,0 +1,44 @@
+# Avelogic: HRKaki — Your HR Companion
+
+> HRKaki is cloud HR and payroll software for Singapore SMEs, developed and supported in Singapore by Avelogic Pte Ltd (UEN 200604587R, founded 2006). It covers employee records, payroll with automatic CPF and direct IRAS submission, leave, claims, attendance and employee self-service. Every customer has a named support person, their "kaki".
+
+## Key facts
+- Product: HRKaki ("Your HR Companion"). Product site: https://www.hrkaki.com/
+- Company: Avelogic Pte Ltd, 7 Gambas Crescent #03-07, Singapore 757087. Tel +65 6367 1128. sales@avelogic.com, support@avelogic.com. Support hours Mon–Fri 9am–6pm SGT.
+- Modules: Employee Information, Payroll Management, Leave Management, Claims, Attendance (Bluetooth beacon or GPS with AWS facial recognition; Model 1010-LITE face terminal), Employee Self-Service (web, iOS, Android).
+- Singapore compliance: CPF by age band and wage ceiling; SDL; CDAC, SINDA, MBMF and ECF; MOM itemised payslips; direct IRAS API submission of IR8A, Appendix 8A/8B and IR21; OED survey submission to MOM; multiple pay cycles per month; GIRO files for DBS, UOB, OCBC, HSBC, Maybank, Citibank, SMBC, MUFG, BNP and Bank of America.
+- Security: web application firewall and DDoS protection; Singpass login for employees; two-factor authentication for administrators; database on a private network with no internet access; records encrypted at rest; continuous vulnerability scanning; prompt patching; audit-logged infrastructure changes; least-privilege access; daily incremental and weekly full backups. A detailed security overview is available to customers on request.
+- Independent rating: ImmuniWeb Community Edition graded hrkaki.com and www.hrkaki.com A for security and privacy on 19 September 2026. Public report: https://www.immuniweb.com/cyberscore/hrkaki.com/
+- Hosting and data residency: Amazon Web Services, Asia Pacific (Singapore) region.
+- Pricing: per employee per month; no licence fee or long-term lock-in; free data migration.
+- Services: payroll outsourcing in Singapore, run on HRKaki by Avelogic's payroll team.
+
+## Pages
+- [Home: products, security and FAQ](https://www.avelogic.com/)
+- [Payroll & HR software (HRKaki)](https://www.avelogic.com/payroll-software.html)
+- [Employee self-service portal (HRKaki e-Services)](https://www.avelogic.com/employee-self-service.html)
+- [Time attendance system (HRKaki Attendance)](https://www.avelogic.com/time-attendance-system.html)
+- [Payroll outsourcing Singapore](https://www.avelogic.com/payroll-outsourcing.html)
+- [School phone locker](https://www.avelogic.com/school-phone-locker.html)
+- [Book a demo / contact](https://www.avelogic.com/contact.html)
+- [Data protection policy](https://www.avelogic.com/privacy.html)
+
+## Guides (blog)
+- [CPF contribution rates for employers in 2026, and what changes in 2027](https://www.avelogic.com/blog/cpf-contribution-rates-singapore.html): Current CPF contribution rates by age for 2026, the $8,000 Ordinary Wage ceiling, the senior worker increases from 1 January 2027, SDL, self-help group funds and payment deadlines.
+- [IR8A and the Auto-Inclusion Scheme: a filing guide for Singapore employers](https://www.avelogic.com/blog/ir8a-auto-inclusion-scheme-guide.html): Who must file IR8A under the IRAS Auto-Inclusion Scheme, the 1 March deadline, which forms you need (IR8S is discontinued), how to submit, IR21 for foreign employees, and the penalties.
+- [MOM itemised payslip requirements: the 12 items every payslip needs](https://www.avelogic.com/blog/mom-itemised-payslip-requirements.html): Who must issue itemised payslips in Singapore, the 12 items MOM requires, the 3-working-day deadline, record-keeping rules, overtime basics and penalties for non-compliance.
+- [Leave entitlement in Singapore: a 2026 guide for employers](https://www.avelogic.com/blog/leave-entitlement-singapore.html): Annual, sick, childcare, maternity, paternity and shared parental leave in Singapore for 2026, including the childcare leave changes announced at the 2026 National Day Rally.
+- [Payroll outsourcing vs in-house payroll: how Singapore SMEs should decide](https://www.avelogic.com/blog/payroll-outsourcing-vs-in-house.html): Outsourced vs in-house payroll in Singapore: cost, compliance risk, confidentiality, PDPA data intermediary rules, and what stays with the employer either way.
+- [Phone storage for secondary schools under MOE's 2026 rules: options compared](https://www.avelogic.com/blog/school-phone-storage-moe-rules.html): What MOE's 2026 rules on phones and smartwatches in secondary schools require, how schools store devices in practice, and a comparison of lockers, collection bags and other storage options.
+- [How to stop buddy punching: time attendance options compared](https://www.avelogic.com/blog/stop-buddy-punching-attendance.html): What buddy punching is, why it costs Singapore employers more than they think, and how cards, fingerprint, face terminals, GPS and beacon mobile attendance compare at preventing it.
+- [How to calculate overtime pay in Singapore under MOM rules](https://www.avelogic.com/blog/overtime-pay-calculation-singapore.html): Who is entitled to overtime pay in Singapore, the hourly rate formula, the $2,600 cap for non-workmen, the 72-hour monthly limit, rest day pay and the 14-day payment deadline, with worked examples.
+- [Public holiday pay and time off in lieu in Singapore](https://www.avelogic.com/blog/public-holiday-pay-singapore.html): Singapore's 11 paid public holidays, what to pay staff who work on one, what happens when a holiday falls on a rest day or non-working day, time off in lieu, and when holiday pay can be withheld.
+- [Key Employment Terms (KETs): what Singapore employers must give in writing](https://www.avelogic.com/blog/key-employment-terms-singapore.html): Who must receive written Key Employment Terms, the 14-day deadline, the 18 items MOM lists, acceptable formats, penalties, and what the Workplace Fairness Act means for hiring.
+- [AWS, year-end bonuses and CPF on Additional Wages: an employer's guide](https://www.avelogic.com/blog/aws-bonus-cpf-additional-wages.html): Whether AWS (the 13th-month bonus) is compulsory in Singapore, how pro-rating works, how CPF applies to bonuses through the Additional Wage ceiling, with worked examples, and how bonuses are taxed.
+- [Notice periods, final salary and leaving employees: Singapore employer guide](https://www.avelogic.com/blog/notice-period-final-salary-singapore.html): Default notice periods under the Employment Act, salary in lieu of notice, when final salary must be paid, retrenchment benefits and notifications, unused leave, IR21 and wrongful dismissal claims.
+
+## Avelogic Phone Locker (for schools)
+- Keyless steel phone locker built for the MOE phone-free classroom in Singapore. 45 numbered slots (3 rows of 15), curved protective dividers, heavy-duty powder-coated steel, carry handle; portable or wall-mounted.
+- Opened by a 6-digit OTP (one-time password) per session from a teacher app; no keys. Students cannot retrieve phones without a teacher.
+- Size 456 W × 337 H × 210 D mm; slot 25 mm × 90 mm. Lead time 1–2 months; demo units available.
+- Avelogic Pte Ltd is an approved Government Supplier on GeBIZ: Supply Head EPU/FUR/10 (Furniture & Racking), Financial Grade S5, valid to December 2027.
