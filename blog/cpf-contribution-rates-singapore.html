@@ -300,6 +300,7 @@
   </div>
 </footer>
 <script>
+(function(){var n=document.querySelector('nav[aria-label="Main"]');if(!n)return;function f(){n.classList.toggle('is-scrolled',window.scrollY>8);}f();window.addEventListener('scroll',f,{passive:true});})();
 function toggleMenu(){var m=document.getElementById('mobileMenu');var o=m.classList.toggle('open');document.querySelector('.hamburger').setAttribute('aria-expanded',o?'true':'false');}
 document.querySelectorAll('#mobileMenu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mobileMenu').classList.remove('open');});});
 </script>
