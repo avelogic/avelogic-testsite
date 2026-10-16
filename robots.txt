@@ -1,5 +1,5 @@
 # robots.txt — Avelogic / HRKaki
-# https://www.avelogic.com
+# https://avelogic.com
 
 User-agent: *
 Allow: /
@@ -29,4 +29,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://www.avelogic.com/sitemap.xml
+Sitemap: https://avelogic.com/sitemap.xml
