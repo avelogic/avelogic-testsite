@@ -61,9 +61,27 @@
       "applicationSubCategory": "Employee self-service portal",
       "operatingSystem": "Web browser, iOS, Android",
       "url": "https://www.avelogic.com/employee-self-service.html",
-      "image": "https://www.avelogic.com/img/hrkaki-logo.png",
+      "image": [
+        "https://www.avelogic.com/img/ess-app-home.png",
+        "https://www.avelogic.com/img/ess-apply-leave.png"
+      ],
+      "screenshot": [
+        "https://www.avelogic.com/img/ess-app-home.png",
+        "https://www.avelogic.com/img/ess-apply-leave.png",
+        "https://www.avelogic.com/img/ess-submit-claim.png",
+        "https://www.avelogic.com/img/ess-payslip.png",
+        "https://www.avelogic.com/img/ess-singpass-login.jpg"
+      ],
       "countriesSupported": "SG",
       "description": "Employee self-service portal and mobile app with Singpass login for eLeave, eClaims, ePayslip and IR8A.",
+      "featureList": [
+        "Singpass login",
+        "Apply and cancel leave with MC attachment",
+        "Batch expense claims with receipt photos and budgets",
+        "Itemised payslips as PDF",
+        "IRAS tax forms",
+        "Two-level approval with email alerts"
+      ],
       "publisher": {
         "@id": "https://www.avelogic.com/#organization"
       }
@@ -76,7 +94,7 @@
           "name": "Can employees log in to HRKaki e-Services with Singpass?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Singpass login is built in. Company ID, user ID and password login is also available."
+            "text": "Yes. Singpass login is built in: staff confirm with their face or fingerprint in the Singpass app, with no password or code to type. HR just needs the employee's NRIC or FIN on their record. Company ID, user ID and password login is also available."
           }
         },
         {
@@ -84,7 +102,23 @@
           "name": "Is there a mobile app?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. There are iOS and Android apps, and the web portal adapts to phones, tablets and laptops with nothing to install."
+            "text": "Yes. HRKaki e-Services is free on the App Store and Google Play, published by Avelogic Pte Ltd. Staff who prefer not to install an app can use hrkaki.com/EServices in their phone's browser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do new staff get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each employee receives a welcome email. They do their first login on a computer to set a password and turn on two-factor sign-in, which takes about 10 minutes, then install the app and switch to Singpass."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if an employee forgets their password?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They tap Reset Password? on the login screen to get a reset link by email, or simply log in with Singpass instead."
           }
         },
         {
@@ -100,7 +134,7 @@
           "name": "How many approval levels are supported?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Up to two levels, with email notifications to the employee and each approver."
+            "text": "Up to two levels, with email notifications to the employee and each approver. Managers can approve from the app or the web portal."
           }
         }
       ]
@@ -155,109 +189,79 @@
 <section class="page-hero">
   <div class="container">
     <div>
-      <div class="label">HRKaki e-Services · Employee Self-Service</div>
+      <div class="pp-eyebrow"><span class="h-ico"><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M15.8 14.2c2.3.2 4 1.8 4.6 4.8"/></svg></span><span>HRKaki e-Services · Employee Self-Service</span></div>
       <h1>Employee self-service portal and app, with Singpass login</h1>
-      <p class="lead"><strong>HRKaki e-Services lets your staff handle their own leave, claims and payslips.</strong> They sign in with Singpass, the national digital identity they already use, from any phone, tablet or laptop. Managers approve requests from their inbox, and approved leave and claims flow straight into payroll.</p>
+      <p class="lead"><strong>HRKaki e-Services lets your staff handle their own leave, claims and payslips.</strong> They sign in with Singpass from any phone, tablet or laptop. Managers approve from their inbox, and approved leave and claims flow straight into payroll.</p>
       <div class="actions"><a href="contact.html" class="btn btn-primary btn-lg">Book an e-Services Demo</a><a href="https://www.hrkaki.com/eservices" class="btn btn-ghost btn-lg">Staff login</a></div>
     </div>
-    <div class="hero-card"><picture><source srcset="img/hrkaki-logo.webp" type="image/webp"><img src="img/hrkaki-logo.png" width="640" height="174" alt="HRKaki: Your HR Companion, payroll and HR software by Avelogic" style="max-width:320px;margin:8px auto 4px;" fetchpriority="high"></picture><ul class="hero-points"><li>Singpass login, with password login still available</li><li>eLeave, eClaims, ePayslip and IR8A in one place</li><li>Two levels of approval with email notifications</li><li>Web portal plus iOS and Android apps</li></ul></div>
+    <div class="hero-card"><div class="es-hero-media"><div class="es-phone"><picture><source srcset="img/ess-app-home.webp" type="image/webp"><img src="img/ess-app-home.png" width="342" height="640" alt="HRKaki e-Services app home screen with Quick Access to Apply Leave, Leave Calendar, Payslip, Tax Forms, Profile and Handbook, and the annual leave balance" fetchpriority="high"></picture></div></div><ul class="hero-points"><li>Singpass login, with password login still available</li><li>eLeave, eClaims, ePayslip and IR8A in one app</li><li>Two levels of approval with email alerts</li><li>iPhone and Android apps, plus the web portal</li></ul></div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="label">Inside the app</div>
+    <h2 class="stitle">What staff can do in e-Services</h2>
+    <p class="es-intro">Real screens from the HRKaki e-Services phone app. The web version has the same menus in a wider layout.</p>
+    <div class="es-shots">
+      <article class="es-shot">
+        <div class="es-screen"><picture><source srcset="img/ess-apply-leave.webp" type="image/webp"><img src="img/ess-apply-leave.png" width="380" height="558" alt="HRKaki e-Services Apply Leave screen with leave type, dates, half-day options and an attach supporting document button" loading="lazy"></picture></div>
+        <h3>Apply for leave</h3>
+        <p>Pick the leave type and dates, tick half day if needed, and attach a photo of the MC. Weekends and public holidays are left out automatically.</p>
+      </article>
+      <article class="es-shot">
+        <div class="es-screen"><picture><source srcset="img/ess-submit-claim.webp" type="image/webp"><img src="img/ess-submit-claim.png" width="505" height="539" alt="HRKaki e-Services claim batch screen listing expense items with a running total and an attach receipt button" loading="lazy"></picture></div>
+        <h3>Submit claims</h3>
+        <p>Add each expense to one batch, snap the receipt with the phone camera, and see the remaining budget before submitting.</p>
+      </article>
+      <article class="es-shot">
+        <div class="es-screen"><picture><source srcset="img/ess-payslip.webp" type="image/webp"><img src="img/ess-payslip.png" width="373" height="306" alt="HRKaki e-Services payslip screen showing a monthly itemised payslip with a PDF download button" loading="lazy"></picture></div>
+        <h3>Payslips and tax forms</h3>
+        <p>View any month's itemised payslip, download it as a PDF, and find year-end IRAS forms in the same menu.</p>
+      </article>
+      <article class="es-shot">
+        <div class="es-screen es-screen-dark"><picture><source srcset="img/ess-singpass-login.webp" type="image/webp"><img src="img/ess-singpass-login.jpg" width="481" height="635" alt="HRKaki e-Services sign-in screen with Log in with Password and Log in with Singpass buttons" loading="lazy"></picture></div>
+        <h3>Log in with Singpass</h3>
+        <p>No password or six-digit code to remember. Staff confirm with their face or fingerprint in the Singpass app.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="section-alt">
+  <div class="container">
+    <div class="label">Getting started</div>
+    <h2 class="stitle">Staff are set up in three steps</h2>
+    <ol class="es-steps">
+      <li><span class="es-n">1</span><div><h3>First login on a computer</h3><p>Set a password and turn on two-factor sign-in from the welcome email. About 10 minutes, done once.</p></div></li>
+      <li><span class="es-n">2</span><div><h3>Get the HRKaki app</h3><p>Install HRKaki e-Services from the <a href="https://apps.apple.com/sg/app/id1603162789" rel="noopener" target="_blank">App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.avelogic.eServices" rel="noopener" target="_blank">Google Play</a>, or use it in the phone's browser.</p></div></li>
+      <li><span class="es-n">3</span><div><h3>Log in with Singpass</h3><p>From then on, Singpass is the quickest way in. Password login stays available too.</p></div></li>
+    </ol>
   </div>
 </section>
 <section>
   <div class="container">
-    <div class="prod-hero" style="margin-bottom:0;">
+    <div class="es-mgr">
       <div>
-        <div class="label">Features</div>
-        <h2 class="stitle">Everything included</h2>
-        <ul class="prod-features">
-            <li><span><strong>Singpass login built in</strong>. Company ID and password login is still available.</span></li>
-            <li>Adaptive web portal for phone, tablet and desktop, with nothing to install</li>
-            <li>iOS and Android apps that staff can learn in minutes</li>
-            <li>eLeave: apply, cancel, check balances and plan with the leave calendar</li>
-            <li>eClaims: photo receipts with auto-sizing, per-staff budgets, batch submission</li>
-            <li>Two levels of approval, with email notifications to staff and approvers</li>
-            <li>Payslips and IR8A / Appendix 8A available online whenever staff need them</li>
-          </ul>
-        
+        <div class="label">For managers</div>
+        <h2 class="stitle">Approvals that don't get stuck</h2>
+        <p class="es-intro">Every leave or claim request can go through up to two levels of approval, and nobody has to chase anyone.</p>
       </div>
-      <div class="prod-visual">
-          <div class="prod-visual-header">
-            <div>
-              <div class="prod-visual-header-text">e-Services: Employee Self-Service</div>
-              <div class="prod-visual-header-sub">Singpass · iOS · Android · Adaptive Web</div>
-            </div>
-          </div>
-          <div class="prod-visual-body">
-            <div class="feature-modules">
-              <div class="fmod">
-                <div class="fmod-icon">🪪</div>
-                <h4>Singpass Sign-in</h4>
-                <ul>
-                  <li>No new password to remember</li>
-                  <li>Fewer reset tickets for HR</li>
-                  <li>Same login as government services</li>
-                  <li>Password login still available</li>
-                </ul>
-              </div>
-              <div class="fmod">
-                <div class="fmod-icon">🏖️</div>
-                <h4>eLeave</h4>
-                <ul>
-                  <li>Apply on mobile or web</li>
-                  <li>Quick leave-calendar view</li>
-                  <li>2-level manager approval</li>
-                  <li>Balances at a glance</li>
-                </ul>
-              </div>
-              <div class="fmod">
-                <div class="fmod-icon">🧾</div>
-                <h4>eClaims</h4>
-                <ul>
-                  <li>Upload receipt photos</li>
-                  <li>Per-staff claim budgets</li>
-                  <li>Batch submission</li>
-                  <li>Reimburse with payroll (optional)</li>
-                </ul>
-              </div>
-              <div class="fmod">
-                <div class="fmod-icon">💸</div>
-                <h4>ePayslip &amp; IR8A</h4>
-                <ul>
-                  <li>View and download payslips</li>
-                  <li>IR8A access year-round</li>
-                  <li>Past payslips archived</li>
-                  <li>Encrypted in transit and at rest</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ul class="ta-checks es-checks"><li><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>An email arrives the moment someone submits a request</span></li><li><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>One tap opens the request, right after a face or fingerprint check</span></li><li><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>See the details, comments, leave balance and attachments together</span></li><li><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Approve or reject, and the employee is told straight away</span></li><li><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Approved leave and claims flow into payroll</span></li></ul>
     </div>
   </div>
 </section>
-
-<section style="padding-top:8px;">
+<section style="padding-top:0;">
   <div class="container prose">
     <h2>Why self-service saves HR so much time</h2>
-    <p>In most small HR teams, a large share of the week goes to routine requests: "How many days of leave do I have left?", "Can you resend my payslip?", "Where's my IR8A?" Employee self-service moves those questions to the employee, so HR can spend its time on work that needs a person.</p>
-    <h2>What staff can do in HRKaki e-Services</h2>
-    <ul>
-      <li><strong>eLeave:</strong> apply for and cancel leave, check balances, and see the team leave calendar before choosing dates.</li>
-      <li><strong>eClaims:</strong> photograph receipts (images are resized automatically), claim against per-staff budgets, and submit in batches. Claims can be reimbursed with payroll.</li>
-      <li><strong>ePayslip and IR8A:</strong> view and download payslips and tax forms any time, with past payslips kept online.</li>
-      <li><strong>Profile and assets:</strong> view personal details and company assets issued to them.</li>
-    </ul>
-    <h2>Singpass login means fewer password resets</h2>
-    <p>Forgotten passwords are one of the most common HR tickets. With Singpass sign-in, staff use the same digital identity they use for government services, so there is no separate password to forget. Company ID and password login stays available for staff who need it, such as some foreign employees.</p>
-    <h2>Approvals that don't get stuck</h2>
-    <p>Each leave or claim request can go through up to two levels of approval. Approvers get an email for every request and can approve or reject in a few taps, and the employee is notified of the outcome.</p>
+    <p>In most small HR teams, much of the week goes to routine questions: how much leave is left, can you resend my payslip, where is my IR8A. Self-service hands those answers to the employee. And because staff sign in with Singpass, the identity they already use for government services, forgotten-password tickets largely disappear.</p>
   </div>
 </section>
 <section class="section-alt" id="faq">
   <div class="container prose">
     <div class="label">FAQ</div>
     <h2 style="margin-top:0;">Employee Self-Service: frequently asked questions</h2>
-    <div class="faq-list"><div class="fitem"><h3 class="fq">Can employees log in to HRKaki e-Services with Singpass?</h3><p class="fa">Yes. Singpass login is built in. Company ID, user ID and password login is also available.</p></div><div class="fitem"><h3 class="fq">Is there a mobile app?</h3><p class="fa">Yes. There are iOS and Android apps, and the web portal adapts to phones, tablets and laptops with nothing to install.</p></div><div class="fitem"><h3 class="fq">Can claims be paid through payroll?</h3><p class="fa">Yes. Approved claims can be reimbursed together with payroll, or paid separately, and you can set different claim budgets for different staff.</p></div><div class="fitem"><h3 class="fq">How many approval levels are supported?</h3><p class="fa">Up to two levels, with email notifications to the employee and each approver.</p></div></div>
+    <div class="h-qs"><details class="h-q"><summary><h3>Can employees log in to HRKaki e-Services with Singpass?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>Yes. Singpass login is built in: staff confirm with their face or fingerprint in the Singpass app, with no password or code to type. HR just needs the employee's NRIC or FIN on their record. Company ID, user ID and password login is also available.</p></details><details class="h-q"><summary><h3>Is there a mobile app?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>Yes. HRKaki e-Services is free on the App Store and Google Play, published by Avelogic Pte Ltd. Staff who prefer not to install an app can use hrkaki.com/EServices in their phone's browser.</p></details><details class="h-q"><summary><h3>How do new staff get started?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>Each employee receives a welcome email. They do their first login on a computer to set a password and turn on two-factor sign-in, which takes about 10 minutes, then install the app and switch to Singpass.</p></details><details class="h-q"><summary><h3>What if an employee forgets their password?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>They tap Reset Password? on the login screen to get a reset link by email, or simply log in with Singpass instead.</p></details><details class="h-q"><summary><h3>Can claims be paid through payroll?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>Yes. Approved claims can be reimbursed together with payroll, or paid separately, and you can set different claim budgets for different staff.</p></details><details class="h-q"><summary><h3>How many approval levels are supported?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>Up to two levels, with email notifications to the employee and each approver. Managers can approve from the app or the web portal.</p></details></div>
   </div>
 </section>
 <section>

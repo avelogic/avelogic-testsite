@@ -5,7 +5,7 @@
 ## Key facts
 - Product: HRKaki ("Your HR Companion"). Product site: https://www.hrkaki.com/
 - Company: Avelogic Pte Ltd, 7 Gambas Crescent #03-07, Singapore 757087. Tel +65 6367 1128. sales@avelogic.com, support@avelogic.com. Support hours Mon–Fri 9am–6pm SGT.
-- Modules: Employee Information, Payroll Management, Leave Management, Claims, Attendance (Bluetooth beacon or GPS with AWS facial recognition; Model 1010-LITE face terminal), Employee Self-Service (web, iOS, Android).
+- Modules: Employee Information, Payroll Management, Leave Management, Claims, Attendance (Bluetooth beacon check-in within 1 metre, GPS with facial authentication, and the Model 1010-LITE touchless face terminal: under 1 second, mask-friendly, 3,000 faces or cards), Employee Self-Service (web, iOS, Android).
 - Singapore compliance: CPF by age band and wage ceiling; SDL; CDAC, SINDA, MBMF and ECF; MOM itemised payslips; direct IRAS API submission of IR8A, Appendix 8A/8B and IR21; OED survey submission to MOM; multiple pay cycles per month; GIRO files for DBS, UOB, OCBC, HSBC, Maybank, Citibank, SMBC, MUFG, BNP and Bank of America.
 - Security: web application firewall and DDoS protection; Singpass login for employees; two-factor authentication for administrators; database on a private network with no internet access; records encrypted at rest; continuous vulnerability scanning; prompt patching; audit-logged infrastructure changes; least-privilege access; daily incremental and weekly full backups. A detailed security overview is available to customers on request.
 - Independent rating: ImmuniWeb Community Edition graded hrkaki.com and www.hrkaki.com A for security and privacy on 19 September 2026. Public report: https://www.immuniweb.com/cyberscore/hrkaki.com/

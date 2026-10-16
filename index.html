@@ -144,7 +144,7 @@
             "itemOffered": {
               "@type": "SoftwareApplication",
               "name": "HRKaki Attendance Time Attendance System",
-              "description": "Mobile time attendance by Bluetooth beacon or GPS with AWS facial recognition and device locking, plus the Model 1010-LITE face recognition terminal; integrated with payroll.",
+              "description": "Mobile time attendance by Bluetooth beacon or GPS with facial recognition and device locking, plus the Model 1010-LITE face recognition terminal; integrated with payroll.",
               "url": "https://www.avelogic.com/time-attendance-system.html",
               "applicationCategory": "BusinessApplication",
               "operatingSystem": "Web browser, iOS, Android",
@@ -206,7 +206,7 @@
         "GIRO bank files for DBS, UOB, OCBC, HSBC, Maybank, Citibank, SMBC, MUFG, BNP and Bank of America",
         "Leave management with tiered entitlement by length of service",
         "Claims with per-staff budgets and payroll reimbursement",
-        "Mobile attendance by Bluetooth beacon or GPS with AWS facial recognition",
+        "Mobile attendance by Bluetooth beacon or GPS with facial recognition",
         "Employee self-service on web, iOS and Android",
         "Singpass login for employees",
         "Two-factor authentication for administrators",
@@ -302,7 +302,7 @@
           "name": "How does HRKaki keep payroll data secure?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "HRKaki protects payroll data in layers. A web application firewall and DDoS protection stop attacks before they reach the system. Employees sign in with Singpass and administrators use two-factor authentication. The database is on a private network with no internet access, and records are encrypted at rest. Servers are continuously scanned for vulnerabilities, and infrastructure changes are audit-logged. Data is stored on AWS in Singapore. ImmuniWeb independently graded hrkaki.com A for security and privacy in September 2026, and a detailed security overview is available on request."
+            "text": "HRKaki protects payroll data in layers. A web application firewall and DDoS protection stop attacks before they reach the system. Employees sign in with Singpass and administrators use two-factor authentication. The database is on a private network with no internet access, and records are encrypted at rest. Servers are continuously scanned for vulnerabilities, and infrastructure changes are audit-logged. Data is stored in Singapore. ImmuniWeb independently graded hrkaki.com A for security and privacy in September 2026, and a detailed security overview is available on request."
           }
         },
         {
@@ -326,7 +326,7 @@
           "name": "Does HRKaki handle CPF and IRAS submissions?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. HRKaki calculates CPF contributions by age band and wage ceiling, plus SDL and CDAC, SINDA, MBMF and ECF. It submits IR8A, Appendix 8A/8B and IR21 directly through the IRAS API. CPF and IRAS rule changes are applied for you."
+            "text": "Yes. HRKaki calculates CPF contributions by age band and wage ceiling, plus SDL and CDAC, SINDA, MBMF and ECF. It submits IR8A and Appendix 8A/8B directly through the IRAS API, and prepares IR21 for departing foreign employees. CPF and IRAS rule changes are applied for you."
           }
         },
         {
@@ -366,7 +366,7 @@
           "name": "What is the Avelogic Phone Locker?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Avelogic Phone Locker is a keyless steel locker with 45 numbered slots, built for the MOE phone-free classroom. Teachers open it with a 6-digit one-time password (OTP) from an app, so schools have no keys to manage. It is portable or wall-mountable."
+            "text": "The Avelogic Phone Locker is a keyless steel locker with 45 numbered slots, built for MOE's phone-free school hours. Teachers open it with a 6-digit one-time password (OTP) from an app, so schools have no keys to manage. It is portable or wall-mountable."
           }
         },
         {
@@ -426,740 +426,191 @@
 
 <main id="main">
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-    <div>
-      <div class="hero-badge"><span class="hero-badge-dot"></span> Built in Singapore since 2006</div>
-      <div class="hero-product-logo">
-        <picture><source srcset="img/hrkaki-logo.webp" type="image/webp"><img src="img/hrkaki-logo.png" width="640" height="174" alt="HRKaki: Your HR Companion, payroll and HR software by Avelogic" class="hrk-logo" fetchpriority="high"></picture>
+<section class="h-hero">
+  <div class="h-wrap h-hero-grid">
+    <div class="h-hero-copy">
+      <picture><source srcset="img/hrkaki-logo.webp" type="image/webp"><img src="img/hrkaki-logo.png" width="640" height="174" alt="HRKaki: Your HR Companion, payroll and HR software by Avelogic" class="hrk-logo h-hero-logo" fetchpriority="high"></picture>
+      <h1>Payroll and HR software for Singapore SMEs, with a real person behind it.</h1>
+      <p class="h-lead">HRKaki runs payroll, CPF, IRAS, leave, claims and attendance in one secure system. When a month isn't routine, your named kaki picks up the phone.</p>
+      <div class="h-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">Book a demo</a>
+        <a href="#products" class="btn h-btn-quiet btn-lg">See what it does</a>
       </div>
-      <h1>Payroll &amp; HR Software for Singapore SMEs, <em>with a real person behind it.</em></h1>
-      <p class="hero-sub"><strong>HRKaki</strong> runs your payroll, CPF, IRAS submissions, leave, claims and attendance in one secure cloud system. You also get a named person, your <em>kaki</em>, who picks up the phone when a month isn't routine.</p>
-      <div class="hero-actions">
-        <a href="contact.html" class="btn btn-primary btn-lg">Book a Demo</a>
-        <a href="#security" class="btn btn-ghost-n btn-lg">See how we protect your data</a>
-      </div>
-      <div class="hero-trust">
-        <p><strong>Trusted by Singapore companies since 2006</strong></p>
-      </div>
+      <p class="h-since">Built and supported in Singapore since 2006</p>
     </div>
+
+    <figure class="h-slip" aria-label="Example of an itemised payslip produced by HRKaki"><figcaption class="sr-only">Example itemised payslip showing CPF worked out automatically</figcaption>
+      <div class="h-slip-paper">
+        <div class="h-slip-head">
+          <div><strong>Itemised payslip</strong><span>Example, October 2026</span></div>
+          <span class="h-slip-tag">MOM format</span>
+        </div>
+        <dl class="h-slip-meta">
+          <div><dt>Employee</dt><dd>Tan Mei Ling</dd></div>
+          <div><dt>Salary period</dt><dd>1–31 Oct 2026</dd></div>
+          <div><dt>Paid on</dt><dd>31 Oct 2026</dd></div>
+        </dl>
+        <table class="h-slip-lines">
+          <tr><td>Basic salary</td><td>4,200.00</td></tr>
+          <tr><td>Transport allowance</td><td>150.00</td></tr>
+          <tr class="sub"><td>Gross pay</td><td>4,350.00</td></tr>
+          <tr class="h-mark"><td>Employee CPF (20%)</td><td>−870.00</td></tr>
+          <tr class="h-tip-row"><td colspan="2"><span class="h-tip"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Worked out by age band and wage ceiling</span></td></tr>
+          <tr class="net"><td>Net salary paid</td><td>3,480.00</td></tr>
+        </table>
+        <p class="h-slip-foot">Employer CPF of 740.00 paid on top</p>
+        <div class="h-slip-chips">
+          <span class="h-tip"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Sent to staff on payday</span>
+          <span class="h-tip"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Ready for IRAS by 1 March</span>
+        </div>
+      </div>
+      <div class="h-kaki"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.5 4-2 1.5a10.5 10.5 0 0 0 6.5 6.5l1.5-2 4 1.5V19a1.5 1.5 0 0 1-1.6 1.5C10.2 20 4 13.8 3.5 5.6A1.5 1.5 0 0 1 5 4z"/></svg><div><strong>Your kaki picks up</strong><span>+65 6367 1128</span></div></div>
+    </figure>
   </div>
 </section>
 
-<!-- TRUST BAR -->
-<div class="trust-bar">
-  <div class="trust-inner">
-    <div class="ti"><div class="ti-icon">🛡️</div> Rated A by ImmuniWeb</div><div class="tdiv"></div>
-    <div class="ti"><div class="ti-icon">🪪</div> Singpass Login</div><div class="tdiv"></div>
-    <div class="ti"><div class="ti-icon">🔐</div> Encrypted &amp; Isolated Database</div><div class="tdiv"></div>
-    <div class="ti"><div class="ti-icon">📋</div> CPF · IRAS · MOM Compliant</div><div class="tdiv"></div>
-    <div class="ti"><div class="ti-icon">☁️</div> Data Stored in Singapore (AWS)</div>
+<!-- TRUST STRIP -->
+<div class="h-strip">
+  <div class="h-wrap h-strip-row">
+    <span><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.2-2.9 7.7-7 9.5-4.1-1.8-7-5.3-7-9.5V6z"/><path d="M9 12l2 2 4-4"/></svg> Rated A by ImmuniWeb</span>
+    <span><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l8-8M16 7l2.5 2.5M14 9l2 2"/></svg> Singpass login</span>
+    <span><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg> Encrypted, private database</span>
+    <span><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/></svg> CPF, IRAS and MOM ready</span>
+    <span><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Data stored in Singapore</span>
   </div>
 </div>
 
-<!-- QUICK FACTS: answer-first summary for search engines and AI assistants -->
-<section class="facts" id="what-is-hrkaki" aria-labelledby="facts-h">
-  <div class="container facts-grid">
-    <div>
-      <div class="label">What is HRKaki?</div>
-      <h2 class="stitle" id="facts-h">HRKaki at a glance</h2>
-      <p><strong>HRKaki is cloud HR and payroll software for Singapore SMEs, developed and supported in Singapore by Avelogic Pte Ltd.</strong> One system covers employee records, payroll with automatic CPF and direct IRAS submission, leave, claims, attendance and employee self-service. Each customer also has a named Avelogic contact.</p>
-    </div>
-    <dl>
-      <dt>Product</dt><dd>HRKaki, "Your HR Companion"</dd>
-      <dt>Developer</dt><dd>Avelogic Pte Ltd, Singapore · UEN 200604587R · est. 2006</dd>
-      <dt>For</dt><dd>Singapore SMEs, from 5 staff to several hundred</dd>
-      <dt>Modules</dt><dd>Employee information, payroll, leave, claims, attendance, employee self-service</dd>
-      <dt>Compliance</dt><dd>CPF, SDL, SHG funds, IRAS API (IR8A, App 8A/8B, IR21), MOM itemised payslips, PDPA</dd>
-      <dt>Security</dt><dd>Singpass and two-factor login, web firewall, private encrypted database, ImmuniWeb grade A</dd>
-      <dt>Hosting</dt><dd>Amazon Web Services, Asia Pacific (Singapore) region</dd>
-      <dt>Access</dt><dd>Web, iOS and Android · <a href="https://www.hrkaki.com/" rel="noopener">hrkaki.com</a></dd>
-    </dl>
-  </div>
-</section>
-
-<!-- ═══════════════════════ PRODUCTS ═══════════════════════ -->
-<section id="products">
-  <div class="container">
-    <div class="label">Products &amp; Services</div>
-    <h2 class="stitle">HR &amp; payroll software, payroll outsourcing and school phone lockers in Singapore</h2>
-    <p class="ssub">Avelogic builds and supports everything below in Singapore. The HRKaki modules share one set of employee records, so leave, claims and attendance flow straight into payroll without re-keying.</p>
-
-    <div class="svc-grid">
-      <a class="svc" href="payroll-software.html"><span class="svc-k">HRKaki</span><h3>Payroll &amp; HR software</h3><p>Cloud payroll software with automatic CPF, GIRO bank files, direct IRAS submission, leave management and HR records.</p><span class="svc-more">Payroll software →</span></a>
-      <a class="svc" href="employee-self-service.html"><span class="svc-k">HRKaki e-Services</span><h3>Employee self-service portal</h3><p>eLeave, eClaims, ePayslip and IR8A on web, iOS and Android, with Singpass login for staff.</p><span class="svc-more">Self-service portal →</span></a>
-      <a class="svc" href="time-attendance-system.html"><span class="svc-k">HRKaki Attendance</span><h3>Time attendance system</h3><p>Mobile clock-in by Bluetooth beacon or GPS, with facial recognition and a face recognition terminal for fixed sites.</p><span class="svc-more">Attendance system →</span></a>
-      <a class="svc" href="payroll-outsourcing.html"><span class="svc-k">Service</span><h3>Payroll outsourcing</h3><p>Our payroll team runs your monthly Singapore payroll, CPF, payslips and year-end IRAS filing for you.</p><span class="svc-more">Payroll outsourcing →</span></a>
-      <a class="svc" href="school-phone-locker.html"><span class="svc-k">For schools</span><h3>School phone locker</h3><p>Keyless 45-slot phone locker opened by teacher OTP, built for the MOE phone-free classroom. On GeBIZ.</p><span class="svc-more">Phone locker →</span></a>
-    </div>
-
-    <div class="products-nav" role="tablist">
-      <button class="pnav-btn active" id="tab-payroll-software" onclick="showProduct('payroll-software',this)" role="tab" aria-controls="payroll-software" aria-selected="true">① Payroll &amp; HR Software</button>
-      <button class="pnav-btn" id="tab-employee-self-service" onclick="showProduct('employee-self-service',this)" role="tab" aria-controls="employee-self-service" aria-selected="false">② Employee Self-Service</button>
-      <button class="pnav-btn" id="tab-time-attendance-system" onclick="showProduct('time-attendance-system',this)" role="tab" aria-controls="time-attendance-system" aria-selected="false">③ Time Attendance System</button>
-      <button class="pnav-btn" id="tab-payroll-outsourcing" onclick="showProduct('payroll-outsourcing',this)" role="tab" aria-controls="payroll-outsourcing" aria-selected="false">④ Payroll Outsourcing</button>
-      <button class="pnav-btn" id="tab-school-phone-locker" onclick="showProduct('school-phone-locker',this)" role="tab" aria-controls="school-phone-locker" aria-selected="false">⑤ School Phone Locker</button>
-    </div>
-
-    <!-- PRODUCT 1: PAYROLL HR LEAVE -->
-    <div class="product-panel active" id="payroll-software" role="tabpanel" aria-labelledby="tab-payroll-software">
-      <div class="prod-hero">
-        <div>
-          <div class="prod-logo-wrap"><picture><source srcset="img/hrkaki-logo.webp" type="image/webp"><img src="img/hrkaki-logo.png" width="640" height="174" alt="HRKaki: Your HR Companion, payroll and HR software by Avelogic" class="hrk-logo" loading="lazy"></picture><span class="prod-logo-tag">Payroll &amp; HR Software</span></div>
-          <h3 class="prod-heading">Payroll software for Singapore SMEs, with CPF and IRAS built in</h3>
-          <p class="prod-sub"><strong>HRKaki is cloud payroll and HR software for Singapore companies.</strong> It calculates salaries, CPF, SDL and self-help group contributions, creates GIRO bank files, issues MOM-compliant payslips and submits IR8A to IRAS directly. Leave management and employee records run in the same HR system. When CPF or IRAS rules change, we update it for you, and your kaki checks your first payroll run with you before anything is finalised.</p>
-          <ul class="prod-features">
-            <li>Automatic CPF by age band and wage ceiling, plus SDL and CDAC, SINDA, MBMF and ECF</li>
-            <li>MOM-compliant itemised payslips, sent to staff automatically every pay cycle</li>
-            <li>Multiple pay cycles per month, with CPF and statutory contributions recalculated</li>
-            <li>Direct IRAS submission via the IRAS API: IR8A, Appendix 8A/8B, IR21</li>
-            <li>MOM-rule overtime, monthly, daily and ad-hoc allowances, attendance incentives</li>
-            <li>Leave policies with tiered entitlement by grade and length of service</li>
-            <li>HR records: biodata, family, bank details, documents, assets, offences and incidents</li>
-            <li>Reminders for work pass expiry, confirmation, retirement and course expiry</li>
-          </ul>
-          <p><a class="panel-more" style="margin-left:0" href="payroll-software.html">Full details on our payroll software page →</a></p>
-          <a href="contact.html" class="btn btn-primary">Book a Payroll Demo</a>
-        </div>
-        <div class="prod-visual">
-          <div class="prod-visual-header">
-            <div>
-              <div class="prod-visual-header-text">Payroll, HR &amp; Leave: key modules</div>
-              <div class="prod-visual-header-sub">HRKaki Admin Portal</div>
-            </div>
-          </div>
-          <div class="prod-visual-body">
-            <div class="feature-modules">
-              <div class="fmod">
-                <div class="fmod-icon">💰</div>
-                <h4>Payroll Management</h4>
-                <ul>
-                  <li>Monthly / daily / ad-hoc payroll</li>
-                  <li>Overtime by MOM rules</li>
-                  <li>Attendance incentive policy</li>
-                  <li>Multi-currency (optional)</li>
-                  <li>Salary history &amp; records</li>
-                </ul>
-              </div>
-              <div class="fmod">
-                <div class="fmod-icon">📋</div>
-                <h4>Employee Information</h4>
-                <ul>
-                  <li>Biodata &amp; family records</li>
-                  <li>Resume, NRIC, passport uploads</li>
-                  <li>Assets issued to staff</li>
-                  <li>Offence &amp; incident records</li>
-                  <li>Education records</li>
-                </ul>
-              </div>
-              <div class="fmod">
-                <div class="fmod-icon">🏖️</div>
-                <h4>Leave Management</h4>
-                <ul>
-                  <li>Annual, medical, maternity, childcare</li>
-                  <li>Tiered entitlement by tenure</li>
-                  <li>Calendar view for team planning</li>
-                  <li>Role-based admin access</li>
-                  <li>Leave balance reports</li>
-                </ul>
-              </div>
-              <div class="fmod">
-                <div class="fmod-icon">🏦</div>
-                <h4>GIRO Bank Files</h4>
-                <div class="bank-grid">
-                  <span class="bank-tag">DBS IDEAL</span><span class="bank-tag">UOB IBG</span><span class="bank-tag">OCBC Velocity</span><span class="bank-tag">HSBC MRI</span><span class="bank-tag">Maybank RC</span><span class="bank-tag">Citibank</span><span class="bank-tag">SMBC</span><span class="bank-tag">MUFG</span><span class="bank-tag">BNP</span><span class="bank-tag">BOA</span>
-                </div>
-              </div>
-            </div>
-            <div style="background:linear-gradient(135deg,var(--navy),var(--indigo-mid));border-radius:10px;padding:14px;margin-top:14px;">
-              <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;">Security built in</div>
-              <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                <span style="background:rgba(242,101,34,.25);border:1px solid rgba(242,101,34,.5);color:#FFBF99;font-size:10px;font-weight:600;padding:4px 10px;border-radius:100px;">ImmuniWeb Grade A</span>
-                <span style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.75);font-size:10px;font-weight:600;padding:4px 10px;border-radius:100px;">2FA Admin Login</span>
-                <span style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.75);font-size:10px;font-weight:600;padding:4px 10px;border-radius:100px;">Encrypted at Rest</span>
-                <span style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.75);font-size:10px;font-weight:600;padding:4px 10px;border-radius:100px;">Web Firewall</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PRODUCT 2: EMPLOYEE SELF SERVICE -->
-    <div class="product-panel" id="employee-self-service" role="tabpanel" aria-labelledby="tab-employee-self-service">
-      <div class="prod-hero">
-        <div>
-          <div class="prod-logo-wrap"><picture><source srcset="img/hrkaki-logo.webp" type="image/webp"><img src="img/hrkaki-logo.png" width="640" height="174" alt="HRKaki: Your HR Companion, payroll and HR software by Avelogic" class="hrk-logo" loading="lazy"></picture><span class="prod-logo-tag">Employee Self-Service</span></div>
-          <h3 class="prod-heading">Employee self-service portal and app: eLeave, eClaims and ePayslip</h3>
-          <p class="prod-sub"><strong>HRKaki e-Services is an employee self-service portal and mobile app for Singapore companies.</strong> Staff sign in with Singpass, then apply for leave, submit expense claims, and view their payslips and IR8A from any phone, tablet or laptop. With no new password to remember, HR gets fewer reset requests, and approvals reach managers by email.</p>
-          <ul class="prod-features">
-            <li><span><strong>Singpass login built in</strong>. Company ID and password login is still available.</span></li>
-            <li>Adaptive web portal for phone, tablet and desktop, with nothing to install</li>
-            <li>iOS and Android apps that staff can learn in minutes</li>
-            <li>eLeave: apply, cancel, check balances and plan with the leave calendar</li>
-            <li>eClaims: photo receipts with auto-sizing, per-staff budgets, batch submission</li>
-            <li>Two levels of approval, with email notifications to staff and approvers</li>
-            <li>Payslips and IR8A / Appendix 8A available online whenever staff need them</li>
-          </ul>
-          <p><a class="panel-more" style="margin-left:0" href="employee-self-service.html">Full details on our employee self-service page →</a></p>
-          <a href="contact.html" class="btn btn-primary">Book an e-Services Demo</a>
-        </div>
-        <div class="prod-visual">
-          <div class="prod-visual-header">
-            <div>
-              <div class="prod-visual-header-text">e-Services: Employee Self-Service</div>
-              <div class="prod-visual-header-sub">Singpass · iOS · Android · Adaptive Web</div>
-            </div>
-          </div>
-          <div class="prod-visual-body">
-            <div class="feature-modules">
-              <div class="fmod">
-                <div class="fmod-icon">🪪</div>
-                <h4>Singpass Sign-in</h4>
-                <ul>
-                  <li>No new password to remember</li>
-                  <li>Fewer reset tickets for HR</li>
-                  <li>Same login as government services</li>
-                  <li>Password login still available</li>
-                </ul>
-              </div>
-              <div class="fmod">
-                <div class="fmod-icon">🏖️</div>
-                <h4>eLeave</h4>
-                <ul>
-                  <li>Apply on mobile or web</li>
-                  <li>Quick leave-calendar view</li>
-                  <li>2-level manager approval</li>
-                  <li>Balances at a glance</li>
-                </ul>
-              </div>
-              <div class="fmod">
-                <div class="fmod-icon">🧾</div>
-                <h4>eClaims</h4>
-                <ul>
-                  <li>Upload receipt photos</li>
-                  <li>Per-staff claim budgets</li>
-                  <li>Batch submission</li>
-                  <li>Reimburse with payroll (optional)</li>
-                </ul>
-              </div>
-              <div class="fmod">
-                <div class="fmod-icon">💸</div>
-                <h4>ePayslip &amp; IR8A</h4>
-                <ul>
-                  <li>View and download payslips</li>
-                  <li>IR8A access year-round</li>
-                  <li>Past payslips archived</li>
-                  <li>Encrypted in transit and at rest</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PRODUCT 3: ATTENDANCE MANAGEMENT -->
-    <div class="product-panel" id="time-attendance-system" role="tabpanel" aria-labelledby="tab-time-attendance-system">
-      <div class="prod-hero">
-        <div>
-          <div class="prod-logo-wrap"><picture><source srcset="img/hrkaki-logo.webp" type="image/webp"><img src="img/hrkaki-logo.png" width="640" height="174" alt="HRKaki: Your HR Companion, payroll and HR software by Avelogic" class="hrk-logo" loading="lazy"></picture><span class="prod-logo-tag">Time Attendance</span></div>
-          <h3 class="prod-heading">Time attendance system with mobile clock-in and facial recognition</h3>
-          <p class="prod-sub"><strong>HRKaki Attendance is a time attendance system for office, site and field staff in Singapore.</strong> Staff clock in and out on their phones by Bluetooth beacon at the office or by GPS on site. AWS facial recognition confirms who is scanning, and each account is locked to the staff member's own phone, which stops buddy punching. For fixed sites, add the Model 1010-LITE face recognition terminal. Attendance records flow straight into payroll and overtime.</p>
-          <ul class="prod-features">
-            <li>Bluetooth beacon mode: scans only work within about 5 m of the beacon. Needs no power, no internet and no installation.</li>
-            <li>GPS mode: scan in and out from anywhere, and admins see the location and selfie</li>
-            <li>AWS facial recognition plus device locking stops buddy punching</li>
-            <li>Time is checked against both the phone and the server for accurate records</li>
-            <li>Model 1010-LITE terminal: touchless face verification in under 1 second</li>
-            <li>Shift and roster scheduling (optional), linked to leave and payroll</li>
-          </ul>
-          <p><a class="panel-more" style="margin-left:0" href="time-attendance-system.html">Full details on our time attendance system page →</a></p>
-          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px;">
-            <a href="contact.html" class="btn btn-primary">Enquire on Mobile Attendance</a>
-            <a href="contact.html" class="btn btn-navy">Enquire on Device 1010-LITE</a>
-          </div>
-        </div>
-        <div class="prod-visual">
-          <div class="prod-visual-header">
-            <div>
-              <div class="prod-visual-header-text">Mobile Attendance + Facial Device 1010-LITE</div>
-              <div class="prod-visual-header-sub">Integrated with HRKaki payroll</div>
-            </div>
-          </div>
-          <div class="prod-visual-body">
-            <div class="scan-methods">
-              <div class="scan-card beacon">
-                <h4>📡 Bluetooth Beacon</h4>
-                <p>For offices and sites with limited space. Scans only register within about 5 m of the beacon.</p>
-                <ul>
-                  <li>No power or internet needed</li>
-                  <li>Stick it up and go</li>
-                  <li>Multi-site deployment</li>
-                  <li>Auto-sync to payroll</li>
-                </ul>
-              </div>
-              <div class="scan-card gps">
-                <h4>📍 GPS Check-In</h4>
-                <p>For mobile and off-site teams. Staff check in anywhere, with a selfie verified by facial recognition.</p>
-                <ul>
-                  <li>Anywhere, anytime</li>
-                  <li>Facial selfie verification</li>
-                  <li>Location shown to admin</li>
-                  <li>Real-time sync</li>
-                </ul>
-              </div>
-            </div>
-            <div style="margin-top:14px;background:white;border:1px solid var(--border);border-radius:10px;padding:16px;">
-              <div style="font-size:12px;font-weight:700;color:var(--navy);margin-bottom:10px;">Model 1010-LITE: Facial Recognition Device</div>
-              <div class="device-stats">
-                <div class="dstat-card"><div class="dstat-num">&lt;1s</div><div class="dstat-unit">Verify Speed</div></div>
-                <div class="dstat-card"><div class="dstat-num">3,000</div><div class="dstat-unit">Face Records</div></div>
-                <div class="dstat-card"><div class="dstat-num">0.3–2m</div><div class="dstat-unit">Detection Range</div></div>
-                <div class="dstat-card"><div class="dstat-num">30°</div><div class="dstat-unit">Angle Accept.</div></div>
-              </div>
-              <table class="spec-table">
-                <tr><td>Display</td><td>5-inch Touch Screen</td></tr>
-                <tr><td>OS / CPU</td><td>Linux · 900 MHz Dual-Core</td></tr>
-                <tr><td>Camera</td><td>2MP Binocular (mask detection)</td></tr>
-                <tr><td>Connectivity</td><td>TCP/IP · Wi-Fi (optional)</td></tr>
-                <tr><td>Log Storage</td><td>150,000 events</td></tr>
-                <tr><td>Dimensions</td><td>72.94 × 157.94 × 23 mm · 260g</td></tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PRODUCT 4: PAYROLL OUTSOURCING -->
-    <div class="product-panel" id="payroll-outsourcing" role="tabpanel" aria-labelledby="tab-payroll-outsourcing">
-      <div class="prod-hero">
-        <div>
-          <div class="prod-logo-wrap"><img src="avelogic_transparent.png" alt="Avelogic payroll outsourcing Singapore" loading="lazy" style="height:48px;width:auto;"><span class="prod-logo-tag">Payroll Outsourcing</span></div>
-          <h3 class="prod-heading">Payroll outsourcing services in Singapore, fully managed</h3>
-          <p class="prod-sub"><strong>Avelogic's payroll outsourcing service runs your monthly Singapore payroll for you.</strong> Our payroll team handles salaries, CPF, GIRO bank files, payslips and year-end IRAS filing on HRKaki, with one consultant who knows your company. It suits SMEs that don't have, or don't want, an in-house payroll executive, and your data gets the same layered security as every HRKaki customer.</p>
-          <ul class="prod-features">
-            <li>Full monthly payroll: salaries, allowances, deductions, OT, bonuses and commissions</li>
-            <li>CPF by age band and wage ceiling, plus SDL, CDAC, SINDA, MBMF and ECF</li>
-            <li>GIRO bank files for DBS, UOB, OCBC, HSBC and more</li>
-            <li>MOM-compliant itemised payslips delivered digitally every pay cycle</li>
-            <li>Year-end IRAS submission: IR8A, Appendix 8A/8B and IR21</li>
-            <li>A dedicated payroll consultant as your single point of contact</li>
-            <li>PDPA-aligned handling on HRKaki's encrypted, Singapore-hosted platform</li>
-          </ul>
-          <p><a class="panel-more" style="margin-left:0" href="payroll-outsourcing.html">Full details on our payroll outsourcing page →</a></p>
-          <a href="contact.html" class="btn btn-primary">Get a Payroll Outsourcing Quote</a>
-        </div>
-        <div class="prod-visual">
-          <div class="prod-visual-header">
-            <div>
-              <div class="prod-visual-header-text">Payroll Outsourcing: What's Included</div>
-              <div class="prod-visual-header-sub">Fully managed monthly payroll on HRKaki</div>
-            </div>
-          </div>
-          <div class="prod-visual-body">
-            <div class="feature-modules">
-              <div class="fmod">
-                <div class="fmod-icon">🧮</div>
-                <h4>Monthly Payroll</h4>
-                <ul>
-                  <li>Salary &amp; allowance calculation</li>
-                  <li>CPF, SDL, SHG contributions</li>
-                  <li>OT, bonus &amp; commission</li>
-                  <li>New hire &amp; resignation pay</li>
-                </ul>
-              </div>
-              <div class="fmod">
-                <div class="fmod-icon">🏦</div>
-                <h4>GIRO &amp; Bank Files</h4>
-                <ul>
-                  <li>DBS IDEAL / UOB IBG / OCBC</li>
-                  <li>HSBC MRI / Maybank / Citibank</li>
-                  <li>Direct deposit to employees</li>
-                  <li>Payroll register report</li>
-                </ul>
-              </div>
-              <div class="fmod">
-                <div class="fmod-icon">📄</div>
-                <h4>Payslips &amp; Filing</h4>
-                <ul>
-                  <li>MOM-compliant itemised payslips</li>
-                  <li>Digital payslip delivery</li>
-                  <li>IR8A, App 8A/8B, IR21</li>
-                  <li>Direct IRAS submission</li>
-                </ul>
-              </div>
-              <div class="fmod">
-                <div class="fmod-icon">🛡️</div>
-                <h4>Security &amp; Confidentiality</h4>
-                <ul>
-                  <li>Private, encrypted database</li>
-                  <li>OTP-protected admin access</li>
-                  <li>Data stored in Singapore</li>
-                  <li>Audit-logged infrastructure</li>
-                </ul>
-              </div>
-            </div>
-            <div style="background:var(--teal-light);border:1px solid rgba(242,101,34,.3);border-radius:10px;padding:14px;margin-top:14px;">
-              <div style="font-size:12px;font-weight:700;color:var(--teal-dark);margin-bottom:6px;">Why outsource to Avelogic?</div>
-              <div style="font-size:13px;color:var(--text-muted);line-height:1.6;">It usually costs less than hiring an in-house payroll executive. You have no software to manage and no compliance changes to track, and you get accurate, on-time payroll every month from the team that has built Singapore payroll software since 2006.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PRODUCT 5: PHONE LOCKER FOR SCHOOLS -->
-    <div class="product-panel" id="school-phone-locker" role="tabpanel" aria-labelledby="tab-school-phone-locker">
-      <div class="prod-hero">
-        <div>
-          <div class="prod-logo-wrap"><img src="avelogic_transparent.png" alt="Avelogic, maker of the school phone locker" loading="lazy" style="height:48px;width:auto;"><span class="prod-logo-tag">School Phone Locker</span></div>
-          <h3 class="prod-heading">School phone locker for the MOE phone-free classroom</h3>
-          <p class="prod-sub"><strong>The Avelogic Phone Locker is a keyless phone storage locker for Singapore schools.</strong> It keeps a whole class's phones locked away and accounted for during school hours. Teachers open it with a 6-digit one-time password (OTP) from an app, so there are no keys to lose, lend or chase down, and with 45 numbered slots a missing phone is spotted at a glance.</p>
-          <ul class="prod-features">
-            <li><span><strong>No keys:</strong> a new 6-digit OTP for each session, held by the teacher in the app</span></li>
-            <li><span><strong>Controlled access:</strong> students can't take their phones back without a teacher</span></li>
-            <li><span><strong>Instant accountability:</strong> 45 numbered slots let you check a full class at one glance</span></li>
-            <li><span><strong>No retrieval queue:</strong> any authorised teacher can open it, so you never wait for one keyholder</span></li>
-            <li><span><strong>Safe storage:</strong> curved dividers keep each phone upright and protect it from scratches</span></li>
-            <li><span><strong>Built for daily school use:</strong> heavy-duty, powder-coated steel with a carry handle</span></li>
-            <li><span><strong>Portable or wall-mounted:</strong> carry it between classrooms or fix it to the wall</span></li>
-            <li><span><strong>Easy to buy:</strong> Avelogic is an approved Government Supplier on GeBIZ, so schools can buy through their usual channels</span></li>
-          </ul>
-          <p><a class="panel-more" style="margin-left:0" href="school-phone-locker.html">Full details on our school phone locker page →</a></p>
-          <div class="locker-steps" aria-label="How a school day works with the phone locker">
-            <div><b>1</b><span><strong>Session starts.</strong> The teacher opens the locker with the OTP from the app.</span></div>
-            <div><b>2</b><span><strong>Phones in.</strong> Each student puts their phone in their numbered slot.</span></div>
-            <div><b>3</b><span><strong>Lessons, fully focused.</strong> The locker stays closed through the school day.</span></div>
-            <div><b>4</b><span><strong>Safe retrieval.</strong> The last-period teacher unlocks it for collection.</span></div>
-          </div>
-          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px;">
-            <a href="contact.html" class="btn btn-primary">Book a School Demo</a>
-            <a href="contact.html" class="btn btn-navy">Request a GeBIZ Quotation</a>
-          </div>
-        </div>
-        <div class="prod-visual">
-          <div class="prod-visual-header">
-            <div>
-              <div class="prod-visual-header-text">Avelogic Phone Locker</div>
-              <div class="prod-visual-header-sub">Keyless · 45 slots · OTP access · GeBIZ supplier</div>
-            </div>
-          </div>
-          <div class="prod-visual-body">
-            <figure class="locker-fig">
-              <picture><source srcset="img/phone-locker-closed-open.webp" type="image/webp"><img src="img/phone-locker-closed-open.jpg" width="1000" height="538" loading="lazy" alt="Avelogic school phone locker closed with its OTP keypad, and open showing 45 numbered phone slots with curved dividers"></picture>
-            </figure>
-            <div class="locker-thumbs">
-              <figure class="locker-fig"><picture><source srcset="img/phone-locker-45-slots.webp" type="image/webp"><img src="img/phone-locker-45-slots.jpg" width="1000" height="751" loading="lazy" alt="Inside the Avelogic Phone Locker: three rows of 15 numbered slots"></picture><figcaption>3 rows of 15 numbered slots</figcaption></figure>
-              <figure class="locker-fig"><picture><source srcset="img/phone-locker-otp-keypad.webp" type="image/webp"><img src="img/phone-locker-otp-keypad.jpg" width="700" height="932" loading="lazy" alt="OTP keypad on the Avelogic Phone Locker door"></picture><figcaption>Opens with a 6-digit OTP</figcaption></figure>
-            </div>
-            <div style="margin-top:14px;background:white;border:1px solid var(--border);border-radius:10px;padding:16px;">
-              <div class="device-stats">
-                <div class="dstat-card"><div class="dstat-num">45</div><div class="dstat-unit">Phone Slots</div></div>
-                <div class="dstat-card"><div class="dstat-num">0</div><div class="dstat-unit">Keys Needed</div></div>
-                <div class="dstat-card"><div class="dstat-num">6</div><div class="dstat-unit">Digit OTP</div></div>
-                <div class="dstat-card"><div class="dstat-num">GeBIZ</div><div class="dstat-unit">Approved Supplier</div></div>
-              </div>
-              <table class="spec-table">
-                <tr><td>Capacity</td><td>45 numbered slots (3 rows × 15)</td></tr>
-                <tr><td>Access</td><td>Keyless, 6-digit OTP per session via app</td></tr>
-                <tr><td>Outer size</td><td>456 W × 337 H × 210 D mm</td></tr>
-                <tr><td>Slot size</td><td>25 mm wide × 90 mm high, curved dividers</td></tr>
-                <tr><td>Construction</td><td>Heavy-duty powder-coated steel, carry handle</td></tr>
-                <tr><td>Installation</td><td>Wall-mounted or free-standing / portable</td></tr>
-                <tr><td>Lead time</td><td>1–2 months · demo units available</td></tr>
-                <tr><td>GeBIZ</td><td>Approved Government Supplier · Supply Head EPU/FUR/10 (Furniture &amp; Racking) · Financial Grade S5, valid to Dec 2027</td></tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- HOW IT WORKS: THE KAKI MODEL -->
-<section id="how" class="how">
-  <div class="container">
-    <div class="label">How HRKaki Works</div>
-    <h2 class="stitle">The system does the work. Your kaki shows up.</h2>
-    <p class="ssub">A <em>kaki</em> is the friend who shows up. With HRKaki you get a named person who knows your account, not a ticket queue. Here's what each of you does through the year.</p>
-    <div class="steps">
-      <div class="step"><div class="step-n">1</div><h3>Switching over</h3><p>The system brings your records, leave balances and salary details into one place. Your kaki migrates them for free and starts from what you already have.</p></div>
-      <div class="step"><div class="step-n">2</div><h3>First payroll</h3><p>The system calculates gross-to-net, CPF and MOM-format payslips. Your kaki reviews the first run with you before anything is finalised.</p></div>
-      <div class="step"><div class="step-n">3</div><h3>Every month</h3><p>Staff file their own leave and claims, and payslips go out automatically. For bonuses, resignations or backpay, call your kaki.</p></div>
-      <div class="step"><div class="step-n">4</div><h3>Year-end</h3><p>Twelve months of consistent records, submitted to IRAS through the IRAS API. Your kaki tells you what's due and when.</p></div>
+<!-- PRODUCTS -->
+<section id="products" class="h-sec">
+  <div class="h-wrap">
+    <h2 class="h-title">Products and services</h2>
+    <p class="h-sub">Five ways we take HR admin off your plate. Each one has its own page with the full details.</p>
+    <div class="h-bento">
+      <a class="h-tile big" href="payroll-software.html">
+        <span class="h-ico"><svg class="ic" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10a1 1 0 0 1 1 1v17l-3-2-3 2-3-2-3 2V4a1 1 0 0 1 1-1z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span>
+        <h3>Payroll and HR software</h3>
+        <p>CPF, GIRO files, MOM payslips and IRAS submission, with leave and HR records in the same system.</p>
+        <ul class="h-ticks"><li>CPF, SDL and SHG funds</li><li>Direct IRAS submission</li><li>MOM itemised payslips</li><li>Leave and HR records</li><li>GIRO files for 10 banks</li></ul>
+        <span class="h-more">Payroll software</span>
+      </a>
+      <a class="h-tile" href="employee-self-service.html">
+        <span class="h-ico"><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M15.8 14.2c2.3.2 4 1.8 4.6 4.8"/></svg></span>
+        <h3>Employee self-service</h3>
+        <p>Leave, claims and payslips on any phone, with Singpass login.</p>
+        <span class="h-more">Self-service</span>
+      </a>
+      <a class="h-tile" href="time-attendance-system.html">
+        <span class="h-ico"><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
+        <h3>Time attendance</h3>
+        <p>Beacon or GPS clock-in with face check. No buddy punching.</p>
+        <span class="h-more">Attendance</span>
+      </a>
+      <a class="h-tile" href="payroll-outsourcing.html">
+        <span class="h-ico"><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l4-4 3 1 2-1 2 1 3-1 4 4"/><path d="M7 7v5l3 3a1.5 1.5 0 0 0 2.1 0l.4-.4M13 9l3 3-3.5 3.5"/><path d="M3 11l2 2M21 11l-2 2"/></svg></span>
+        <h3>Payroll outsourcing</h3>
+        <p>Our team runs your monthly payroll and year-end filing.</p>
+        <span class="h-more">Outsourcing</span>
+      </a>
+      <a class="h-tile school" href="school-phone-locker.html">
+        <span class="h-ico"><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><rect x="9.2" y="10.5" width="5.6" height="4.5" rx="1"/><path d="M10.3 10.5V9.3a1.7 1.7 0 0 1 3.4 0v1.2"/></svg></span>
+        <h3>School phone locker</h3>
+        <p>45 numbered slots, opened by a teacher's OTP. On GeBIZ.</p>
+        <span class="h-more">For schools</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════ SECURITY ═══════════════════════ -->
-<section id="security" class="security" aria-labelledby="sec-h">
-  <div class="container">
-    <div class="label">Security Upgrade</div>
-    <h2 class="stitle" id="sec-h">Payroll data is your most sensitive data, so we protect it in layers.</h2>
-    <p class="ssub">With the move to HRKaki we rebuilt the platform's security from the network edge to the database. An attacker would have to get past every layer below, and the result has been independently tested.</p>
+<!-- HOW IT WORKS -->
+<section id="how" class="h-sec h-alt">
+  <div class="h-wrap">
+    <h2 class="h-title">The system does the work. Your kaki shows up.</h2>
+    <ol class="h-steps">
+      <li><b>1</b><h3>Switching over</h3><p>We move your records and leave balances in, free.</p></li>
+      <li><b>2</b><h3>First payroll</h3><p>Your kaki checks the first run with you.</p></li>
+      <li><b>3</b><h3>Every month</h3><p>Staff self-serve. Payslips go out on their own.</p></li>
+      <li><b>4</b><h3>Year-end</h3><p>IR8A goes to IRAS. You're told what's due.</p></li>
+    </ol>
+  </div>
+</section>
 
-    <div class="flow" aria-label="The layers every request passes through">
-      <b>Staff &amp; admins</b><i>→</i><b>Edge protection</b><i>→</i><b>Verified sign-in</b><i>→</i><b>HRKaki application</b><i>→</i><b>Encrypted data</b>
+<!-- SECURITY -->
+<section id="security" class="h-sec h-navy">
+  <div class="h-wrap h-sec-grid">
+    <div class="h-grade">
+      <h2 class="h-title">Your payroll data, protected in layers</h2>
+      <div class="h-grade-badge"><span>A</span><div><strong>ImmuniWeb security grade</strong><em>hrkaki.com, tested 19 Sep 2026</em><a href="https://www.immuniweb.com/cyberscore/hrkaki.com/" target="_blank" rel="noopener">View the public report</a></div></div>
+      <p class="h-note">A detailed security overview is available on request for procurement and IT teams.</p>
     </div>
-
-    <div class="layers">
-      <div class="layer">
-        <div class="layer-n">Layer 1 · Edge</div>
-        <h3>Attacks stopped before they arrive</h3>
-        <ul>
-          <li><span><strong>Web application firewall</strong> blocks common attacks such as SQL injection, cross-site scripting and malicious bots</span></li>
-          <li><span><strong>DDoS protection</strong> absorbs traffic floods so payroll day stays online</span></li>
-          <li><span>All traffic is encrypted in transit with modern TLS</span></li>
-        </ul>
-      </div>
-      <div class="layer">
-        <div class="layer-n">Layer 2 · Identity</div>
-        <h3>Only the right people get in</h3>
-        <ul>
-          <li><span><strong>Singpass login</strong> for employees, using the national digital identity</span></li>
-          <li><span><strong>Two-factor authentication</strong> with a one-time password for every administrator</span></li>
-          <li><span>Role-based access rights for each HR and finance administrator</span></li>
-        </ul>
-      </div>
-      <div class="layer">
-        <div class="layer-n">Layer 3 · Network</div>
-        <h3>No public route to your data</h3>
-        <ul>
-          <li><span>The database sits on a <strong>private network</strong> and can't be reached from the internet</span></li>
-          <li><span>Only the HRKaki application, behind the firewall, can reach it</span></li>
-          <li><span>Each client's records are kept separate from every other client's</span></li>
-        </ul>
-      </div>
-      <div class="layer">
-        <div class="layer-n">Layer 4 · Data</div>
-        <h3>Unreadable without the key</h3>
-        <ul>
-          <li><span>Employee records are <strong>encrypted at rest</strong>, with keys held in a managed key service</span></li>
-          <li><span>System passwords and keys are kept in a secure vault, never in code</span></li>
-          <li><span>Daily incremental and weekly full backups</span></li>
-        </ul>
-      </div>
-      <div class="layer">
-        <div class="layer-n">Layer 5 · Operations</div>
-        <h3>Watched, patched and logged</h3>
-        <ul>
-          <li><span><strong>Continuous vulnerability scanning</strong> of our servers</span></li>
-          <li><span>Security patches applied centrally and promptly</span></li>
-          <li><span>Every infrastructure change is recorded in an audit log</span></li>
-          <li><span>Least-privilege access for our own team</span></li>
-        </ul>
-      </div>
-      <div class="layer">
-        <div class="layer-n">Layer 6 · Residency &amp; Support</div>
-        <h3>Your data stays in Singapore</h3>
-        <ul>
-          <li><span>Hosted on <strong>Amazon Web Services in Singapore</strong></span></li>
-          <li><span>Managed by Avelogic's Singapore team, Monday to Friday, 9am–6pm</span></li>
-          <li><span><strong>A detailed security overview is available on request</strong> for procurement and IT teams</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="verify">
-      <div class="verify-grade" aria-label="Grade A">A</div>
-      <div>
-        <h3>Independently rated by ImmuniWeb®</h3>
-        <p>On 19 September 2026, ImmuniWeb's Community Edition tested the live hrkaki.com and www.hrkaki.com domains and graded both <strong>A for security and privacy</strong>. The rating comes from ImmuniWeb, not from us, and the report is public. You can re-run it yourself at any time.</p>
-      </div>
-      <a class="btn btn-primary" href="https://www.immuniweb.com/cyberscore/hrkaki.com/" target="_blank" rel="noopener">View the public report ↗</a>
-    </div>
+    <ul class="h-layers">
+      <li><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.2-2.9 7.7-7 9.5-4.1-1.8-7-5.3-7-9.5V6z"/><path d="M9 12l2 2 4-4"/></svg><strong>Firewall and DDoS shield</strong><span>Attacks stopped at the edge</span></li>
+      <li><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l8-8M16 7l2.5 2.5M14 9l2 2"/></svg><strong>Singpass and 2FA</strong><span>Only the right people sign in</span></li>
+      <li><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="3" y="16" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M6 16v-2h12v2"/></svg><strong>Private network</strong><span>No internet route to the database</span></li>
+      <li><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg><strong>Encrypted at rest</strong><span>Unreadable without the key</span></li>
+      <li><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><path d="M8 12h8"/></svg><strong>Scanned and patched</strong><span>Every change audit-logged</span></li>
+      <li><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><strong>Stored in Singapore</strong><span>Singapore data centres, daily backups</span></li>
+    </ul>
   </div>
 </section>
 
 <!-- COMPLIANCE -->
-<section id="compliance">
-  <div class="container">
-    <div class="compliance-grid">
-      <div>
-        <div class="label">Singapore Regulatory Compliance</div>
-        <h2 class="stitle">Payroll software built for Singapore's CPF, IRAS and MOM rules</h2>
-        <p class="ssub">When CPF rates, IRAS requirements or the Employment Act change, we update HRKaki for you at no extra charge, so your payroll stays compliant without manual work.</p>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:20px;">
-          <li style="display:flex;gap:10px;font-size:14px;color:var(--text-muted);line-height:1.6;"><span style="color:var(--teal);margin-top:3px;">●</span><span><strong style="color:var(--navy);">CPF Automation</strong>: contributions calculated by age band and wage ceiling, with rate changes applied automatically.</span></li>
-          <li style="display:flex;gap:10px;font-size:14px;color:var(--text-muted);line-height:1.6;"><span style="color:var(--teal);margin-top:3px;">●</span><span><strong style="color:var(--navy);">IRAS Direct Submission</strong>: IR8A, Appendix 8A/8B and IR21 filed through the IRAS API.</span></li>
-          <li style="display:flex;gap:10px;font-size:14px;color:var(--text-muted);line-height:1.6;"><span style="color:var(--teal);margin-top:3px;">●</span><span><strong style="color:var(--navy);">Employment Act</strong>: itemised payslips, overtime and leave entitlements follow current MOM guidelines.</span></li>
-          <li style="display:flex;gap:10px;font-size:14px;color:var(--text-muted);line-height:1.6;"><span style="color:var(--teal);margin-top:3px;">●</span><span><strong style="color:var(--navy);">PDPA</strong>: personal data is encrypted, access-controlled, audit-logged and stored in Singapore.</span></li>
-        </ul>
-      </div>
-      <div class="sec-vis">
-        <div style="font-size:12px;font-weight:700;color:var(--navy);margin-bottom:14px;">Compliance Checklist</div>
-        <div class="cbadge"><div class="cbi cbi-t">✅</div><div><div class="cbl">CPF Board</div><div class="cbs">Rates updated automatically</div></div></div>
-        <div class="cbadge"><div class="cbi cbi-n">📄</div><div><div class="cbl">IRAS API Submission</div><div class="cbs">IR8A, App 8A/8B, IR21</div></div></div>
-        <div class="cbadge"><div class="cbi cbi-a">⚖️</div><div><div class="cbl">Employment Act (MOM)</div><div class="cbs">Itemised payslips, overtime, leave</div></div></div>
-        <div class="cbadge"><div class="cbi cbi-t">🛡️</div><div><div class="cbl">PDPA</div><div class="cbs">Encrypted · Singpass · OTP · Singapore-hosted</div></div></div>
-        <div class="cbadge"><div class="cbi cbi-n">💼</div><div><div class="cbl">SDL &amp; SHG Funds</div><div class="cbs">CDAC / SINDA / MBMF / ECF auto-calculated</div></div></div>
-        <div class="cbadge"><div class="cbi cbi-t">📊</div><div><div class="cbl">OED Survey</div><div class="cbs">Direct submission to MOM</div></div></div>
-      </div>
+<section id="compliance" class="h-sec">
+  <div class="h-wrap">
+    <h2 class="h-title">Built for Singapore's rules</h2>
+    <p class="h-sub">When CPF, IRAS or MOM rules change, we update HRKaki for you at no extra charge.</p>
+    <div class="h-badges">
+      <div><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5.5" width="16" height="15" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></svg><strong>CPF Board</strong><span>Rates and wage ceilings by age band</span></div>
+      <div><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/></svg><strong>IRAS</strong><span>IR8A, Appendix 8A/8B and IR21 via the IRAS API</span></div>
+      <div><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M7 20h10M5 8h14"/><path d="M5 8l-2.5 6a2.5 2.5 0 0 0 5 0zM19 8l-2.5 6a2.5 2.5 0 0 0 5 0z"/></svg><strong>MOM</strong><span>Itemised payslips, overtime and leave rules</span></div>
+      <div><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.2-2.9 7.7-7 9.5-4.1-1.8-7-5.3-7-9.5V6z"/><path d="M9 12l2 2 4-4"/></svg><strong>PDPA</strong><span>Encrypted, access-controlled, audit-logged</span></div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════ FAQ ═══════════════════════ -->
-<section id="faq" class="faq-section">
-  <div class="container">
-    <div class="label">Common Questions</div>
-    <h2 class="stitle">HRKaki: Frequently Asked Questions</h2>
-    <p class="ssub">Straight answers about HRKaki's features, security and pricing.</p>
-
-    <div class="faq-tab-content active" id="faq-product">
-      <div class="fitem"><h3 class="fq">What is HRKaki?</h3><p class="fa">HRKaki is cloud HR and payroll software for Singapore SMEs, built and supported in Singapore by Avelogic Pte Ltd. One system covers employee records, payroll with CPF and IRAS submission, leave, claims, attendance and employee self-service. Every customer also gets a named support person, their kaki.</p></div>
-      <div class="fitem"><h3 class="fq">How does HRKaki keep payroll data secure?</h3><p class="fa">HRKaki protects payroll data in layers. A web application firewall and DDoS protection stop attacks before they reach the system. Employees sign in with Singpass and administrators use two-factor authentication. The database is on a private network with no internet access, and records are encrypted at rest. Servers are continuously scanned for vulnerabilities, and infrastructure changes are audit-logged. Data is stored on AWS in Singapore. ImmuniWeb independently graded hrkaki.com A for security and privacy in September 2026, and a detailed security overview is available on request.</p></div>
-      <div class="fitem"><h3 class="fq">Can employees log in to HRKaki with Singpass?</h3><p class="fa">Yes. Employees can sign in to the HRKaki e-Services portal with Singpass, so there is no separate password to forget. Company ID, user ID and password login is still available.</p></div>
-      <div class="fitem"><h3 class="fq">Where is HRKaki data stored?</h3><p class="fa">HRKaki data is stored on Amazon Web Services in the Asia Pacific (Singapore) region, with daily incremental and weekly full backups.</p></div>
-      <div class="fitem"><h3 class="fq">Does HRKaki handle CPF and IRAS submissions?</h3><p class="fa">Yes. HRKaki calculates CPF contributions by age band and wage ceiling, plus SDL and CDAC, SINDA, MBMF and ECF. It submits IR8A, Appendix 8A/8B and IR21 directly through the IRAS API. CPF and IRAS rule changes are applied for you.</p></div>
-      <div class="fitem"><h3 class="fq">What does "kaki" mean in HRKaki?</h3><p class="fa">Kaki is Singlish for a buddy, the friend who shows up. In HRKaki it means a named Avelogic person who knows your account and helps with your first payroll, unusual months such as bonuses or backpay, and year-end submissions.</p></div>
-      <div class="fitem"><h3 class="fq">How is HRKaki priced?</h3><p class="fa">HRKaki is priced per employee per month, with no licence fee, no hardware and no long-term lock-in. Data migration is free. Contact Avelogic at sales@avelogic.com or +65 6367 1128 for a quote.</p></div>
-      <div class="fitem"><h3 class="fq">Can I move from my current payroll system to HRKaki?</h3><p class="fa">Yes. Avelogic migrates employee records, leave balances and salary details for you at no charge, and your kaki reviews your first payroll run with you before anything is finalised.</p></div>
-      <div class="fitem"><h3 class="fq">Does HRKaki work on mobile phones?</h3><p class="fa">Yes. The e-Services portal adapts to phone, tablet and desktop, and there are iOS and Android apps. Staff can apply for leave, submit claims, view payslips and IR8A, and clock in from their phones.</p></div>
-      <div class="fitem"><h3 class="fq">What is the Avelogic Phone Locker?</h3><p class="fa">The Avelogic Phone Locker is a keyless steel locker with 45 numbered slots, built for the MOE phone-free classroom. Teachers open it with a 6-digit one-time password (OTP) from an app, so schools have no keys to manage. It is portable or wall-mountable.</p></div>
-      <div class="fitem"><h3 class="fq">Can schools buy the Phone Locker through GeBIZ?</h3><p class="fa">Yes. Avelogic Pte Ltd is an approved Government Supplier on GeBIZ under Supply Head EPU/FUR/10 (Furniture &amp; Racking), Financial Grade S5, valid to December 2027. Schools can buy through their usual GeBIZ channels, and Avelogic offers free on-site demos.</p></div>
-    </div>
+<!-- GUIDES -->
+<section id="guides" class="h-sec h-alt">
+  <div class="h-wrap">
+    <div class="h-head-row"><h2 class="h-title">Singapore payroll and HR guides</h2><a class="h-link" href="blog/index.html">All guides</a></div>
+    <div class="card-grid"><a class="post-card" href="blog/cpf-contribution-rates-singapore.html"><span class="cat">Payroll & CPF</span><h3>CPF contribution rates for employers in 2026, and what changes in 2027</h3><span class="meta">8 min read</span></a><a class="post-card" href="blog/ir8a-auto-inclusion-scheme-guide.html"><span class="cat">Tax & IRAS</span><h3>IR8A and the Auto-Inclusion Scheme: a filing guide for Singapore employers</h3><span class="meta">7 min read</span></a><a class="post-card" href="blog/school-phone-storage-moe-rules.html"><span class="cat">For Schools</span><h3>Phone storage for secondary schools under MOE's 2026 rules: options compared</h3><span class="meta">7 min read</span></a></div>
   </div>
 </section>
 
-
-<!-- COMPANY -->
-<section id="company" class="company-section">
-  <div class="container">
-    <div class="label">About Avelogic</div>
-    <h2 class="stitle">The Singapore company behind HRKaki, since 2006</h2>
-    <p class="ssub">Avelogic Pte Ltd (Avenue to Logical Solutions) designs, builds and supports HRKaki entirely in Singapore.</p>
-
-    <div class="company-tabs">
-      <button class="ctab active" onclick="showCompanyTab('co-overview',this)">Overview</button>
-      <button class="ctab" onclick="showCompanyTab('co-vision',this)">Vision &amp; Philosophy</button>
-      <button class="ctab" onclick="showCompanyTab('co-dc',this)">Infrastructure</button>
+<!-- FAQ -->
+<section id="faq" class="h-sec">
+  <div class="h-wrap h-faq">
+    <div>
+      <h2 class="h-title">Questions we're often asked</h2>
+      <p class="h-sub">Can't find your answer? Call us on +65 6367 1128, Monday to Friday, 9am to 6pm.</p>
     </div>
-
-    <!-- Overview -->
-    <div class="ctab-panel active" id="co-overview">
-      <div class="co-overview-grid">
-        <div>
-          <p style="font-size:17px;line-height:1.8;color:var(--text-muted);margin-bottom:20px;">Avelogic Pte Ltd (UEN 200604587R) was incorporated in Singapore on 30 March 2006 to bring enterprise-grade payroll and HR software within reach of every Singapore SME.</p>
-          <p style="font-size:16px;line-height:1.8;color:var(--text-muted);margin-bottom:20px;">Small companies carry the same CPF, IRAS and Employment Act obligations as large ones. Our answer is <strong>HRKaki</strong>: one secure system for payroll, HR, leave, claims and attendance, supported by a Singapore team and a named kaki for every customer.</p>
-          <p style="font-size:16px;line-height:1.8;color:var(--text-muted);">Singapore companies have run payroll on the platform since 2006, and every regulatory change is applied for them.</p>
-          <div class="co-stat-row">
-            <div class="co-stat"><div class="co-stat-n">2006</div><div class="co-stat-l">Founded in Singapore</div></div>
-            <div class="co-stat"><div class="co-stat-n">100%</div><div class="co-stat-l">Developed &amp; Supported in Singapore</div></div>
-            <div class="co-stat"><div class="co-stat-n">20</div><div class="co-stat-l">Years of Experience</div></div>
-          </div>
-        </div>
-        <div class="co-vis-box">
-          <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:16px;text-transform:uppercase;letter-spacing:.06em;">At a Glance</div>
-          <div class="co-vis-item">
-            <div class="co-vis-icon" style="background:var(--teal-light);">🏢</div>
-            <div><div class="co-vis-lbl">Legal Entity</div><div class="co-vis-sub">Avelogic Pte Ltd, Singapore UEN 200604587R</div></div>
-          </div>
-          <div class="co-vis-item">
-            <div class="co-vis-icon" style="background:#EEF2FF;">📍</div>
-            <div><div class="co-vis-lbl">Registered Office</div><div class="co-vis-sub">7 Gambas Crescent #03-07, Ark@Gambas, Singapore 757087</div></div>
-          </div>
-          <div class="co-vis-item">
-            <div class="co-vis-icon" style="background:#FFF0EB;">☁️</div>
-            <div><div class="co-vis-lbl">Infrastructure</div><div class="co-vis-sub">AWS Singapore · firewall &amp; DDoS protection</div></div>
-          </div>
-          <div class="co-vis-item">
-            <div class="co-vis-icon" style="background:#F0FBF8;">🔐</div>
-            <div><div class="co-vis-lbl">Security &amp; Compliance</div><div class="co-vis-sub">ImmuniWeb grade A · PDPA · CPF · IRAS · MOM</div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Vision & Business Philosophy -->
-    <div class="ctab-panel" id="co-vision">
-      <p style="font-size:17px;line-height:1.8;color:var(--text-muted);margin-bottom:32px;max-width:760px;">Every Singapore SME deserves the HR and payroll tools large enterprises have, at a price that makes sense, and someone to call when payroll gets complicated.</p>
-      <div class="vision-grid">
-        <div class="vision-card">
-          <h4>🎯 Our Vision</h4>
-          <p>To be Singapore's most trusted HR and payroll partner for SMEs, giving them the precision and compliance of large corporations at a fraction of the cost.</p>
-        </div>
-        <div class="vision-card">
-          <h4>🤝 A Kaki, Not a Queue</h4>
-          <p>Software handles the routine. People handle the exceptions. Every HRKaki customer has a named contact who knows their account and answers the phone, Monday to Friday, 9am–6pm.</p>
-        </div>
-        <div class="vision-card">
-          <h4>💰 Affordability First</h4>
-          <p>No upfront investment, licence fees, maintenance charges or long-term lock-in. Simple per-employee monthly pricing means you pay only for what you use.</p>
-        </div>
-        <div class="vision-card">
-          <h4>🔒 Security by Design</h4>
-          <p>Payroll data is the most sensitive data a company holds. HRKaki protects it in layers: edge protection, Singpass and two-factor sign-in, a private encrypted database, and continuous vulnerability scanning.</p>
-        </div>
-        <div class="vision-card">
-          <h4>💡 Always Current</h4>
-          <p>CPF, IRAS and MOM changes are applied for you. Because the system was built in Singapore for Singapore rules, it keeps up as they change.</p>
-        </div>
-        <div class="vision-card">
-          <h4>📈 Growing with You</h4>
-          <p>From a 5-person startup to several hundred staff, start with payroll and add leave, claims, self-service, attendance or full payroll outsourcing as you grow.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Infrastructure -->
-    <div class="ctab-panel" id="co-dc">
-      <div class="dc-grid">
-        <div>
-          <p style="font-size:17px;line-height:1.8;color:var(--text-muted);margin-bottom:24px;">HRKaki runs on Amazon Web Services in Singapore, behind a web application firewall and DDoS protection. Your payroll and HR data is stored in Singapore, and a detailed security overview is available to customers on request.</p>
-          <div class="dc-specs">
-            <div class="dc-spec"><div class="dc-spec-icon">🌐</div><div><div class="dc-spec-lbl">Firewall &amp; DDoS Protection</div><div class="dc-spec-sub">Malicious traffic filtered before it reaches the application</div></div></div>
-            <div class="dc-spec"><div class="dc-spec-icon">☁️</div><div><div class="dc-spec-lbl">AWS Singapore</div><div class="dc-spec-sub">Hosted on Amazon Web Services, data stored in Singapore</div></div></div>
-            <div class="dc-spec"><div class="dc-spec-icon">🗄️</div><div><div class="dc-spec-lbl">Private, Encrypted Data</div><div class="dc-spec-sub">No internet route to the database · encrypted at rest</div></div></div>
-            <div class="dc-spec"><div class="dc-spec-icon">🔑</div><div><div class="dc-spec-lbl">Access Control</div><div class="dc-spec-sub">Singpass and two-factor sign-in · role-based, least-privilege access</div></div></div>
-            <div class="dc-spec"><div class="dc-spec-icon">🔎</div><div><div class="dc-spec-lbl">Monitoring &amp; Patching</div><div class="dc-spec-sub">Continuous vulnerability scanning · prompt patching · audit logs</div></div></div>
-            <div class="dc-spec"><div class="dc-spec-icon">💾</div><div><div class="dc-spec-lbl">Daily &amp; Weekly Backups</div><div class="dc-spec-sub">Daily incremental and weekly full backups to secure storage</div></div></div>
-          </div>
-        </div>
-        <div>
-          <div style="background:var(--navy);border-radius:var(--radius-lg);padding:32px;color:white;">
-            <div style="font-size:13px;font-weight:700;color:var(--orange);letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px;">Infrastructure Summary</div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;">
-              <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:16px;text-align:center;"><div style="font-size:22px;font-family:'DM Serif Display',serif;font-weight:700;color:var(--orange);">Grade A</div><div style="font-size:11px;color:rgba(255,255,255,.5);margin-top:4px;">ImmuniWeb, Sep 2026</div></div>
-              <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:16px;text-align:center;"><div style="font-size:22px;font-family:'DM Serif Display',serif;font-weight:700;color:var(--orange);">SG</div><div style="font-size:11px;color:rgba(255,255,255,.5);margin-top:4px;">Data Residency</div></div>
-              <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:16px;text-align:center;"><div style="font-size:22px;font-family:'DM Serif Display',serif;font-weight:700;color:var(--orange);">99%</div><div style="font-size:11px;color:rgba(255,255,255,.5);margin-top:4px;">Uptime Target</div></div>
-              <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:16px;text-align:center;"><div style="font-size:22px;font-family:'DM Serif Display',serif;font-weight:700;color:var(--orange);">2FA</div><div style="font-size:11px;color:rgba(255,255,255,.5);margin-top:4px;">Singpass &amp; OTP</div></div>
-            </div>
-            <div style="font-size:13px;color:rgba(255,255,255,.6);line-height:1.7;border-top:1px solid rgba(255,255,255,.1);padding-top:16px;">Avelogic may adjust server locations to keep service performance high. Any change is notified 20 days in advance under our Service Level Agreement.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <div class="h-qs"><details class="h-q"><summary><h3>What is HRKaki?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>HRKaki is cloud HR and payroll software for Singapore SMEs, built and supported in Singapore by Avelogic Pte Ltd. One system covers employee records, payroll with CPF and IRAS submission, leave, claims, attendance and employee self-service. Every customer also gets a named support person, their kaki.</p></details><details class="h-q"><summary><h3>How does HRKaki keep payroll data secure?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>HRKaki protects payroll data in layers. A web application firewall and DDoS protection stop attacks before they reach the system. Employees sign in with Singpass and administrators use two-factor authentication. The database is on a private network with no internet access, and records are encrypted at rest. Servers are continuously scanned for vulnerabilities, and infrastructure changes are audit-logged. Data is stored in Singapore. ImmuniWeb independently graded hrkaki.com A for security and privacy in September 2026, and a detailed security overview is available on request.</p></details><details class="h-q"><summary><h3>Can employees log in to HRKaki with Singpass?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>Yes. Employees can sign in to the HRKaki e-Services portal with Singpass, so there is no separate password to forget. Company ID, user ID and password login is still available.</p></details><details class="h-q"><summary><h3>Where is HRKaki data stored?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>HRKaki data is stored on Amazon Web Services in the Asia Pacific (Singapore) region, with daily incremental and weekly full backups.</p></details><details class="h-q"><summary><h3>Does HRKaki handle CPF and IRAS submissions?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>Yes. HRKaki calculates CPF contributions by age band and wage ceiling, plus SDL and CDAC, SINDA, MBMF and ECF. It submits IR8A and Appendix 8A/8B directly through the IRAS API, and prepares IR21 for departing foreign employees. CPF and IRAS rule changes are applied for you.</p></details><details class="h-q"><summary><h3>What does "kaki" mean in HRKaki?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>Kaki is Singlish for a buddy, the friend who shows up. In HRKaki it means a named Avelogic person who knows your account and helps with your first payroll, unusual months such as bonuses or backpay, and year-end submissions.</p></details><details class="h-q"><summary><h3>How is HRKaki priced?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>HRKaki is priced per employee per month, with no licence fee, no hardware and no long-term lock-in. Data migration is free. Contact Avelogic at sales@avelogic.com or +65 6367 1128 for a quote.</p></details><details class="h-q"><summary><h3>Can I move from my current payroll system to HRKaki?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>Yes. Avelogic migrates employee records, leave balances and salary details for you at no charge, and your kaki reviews your first payroll run with you before anything is finalised.</p></details><details class="h-q"><summary><h3>Does HRKaki work on mobile phones?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>Yes. The e-Services portal adapts to phone, tablet and desktop, and there are iOS and Android apps. Staff can apply for leave, submit claims, view payslips and IR8A, and clock in from their phones.</p></details><details class="h-q"><summary><h3>What is the Avelogic Phone Locker?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>The Avelogic Phone Locker is a keyless steel locker with 45 numbered slots, built for MOE's phone-free school hours. Teachers open it with a 6-digit one-time password (OTP) from an app, so schools have no keys to manage. It is portable or wall-mountable.</p></details><details class="h-q"><summary><h3>Can schools buy the Phone Locker through GeBIZ?</h3><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></summary><p>Yes. Avelogic Pte Ltd is an approved Government Supplier on GeBIZ under Supply Head EPU/FUR/10 (Furniture &amp; Racking), Financial Grade S5, valid to December 2027. Schools can buy through their usual GeBIZ channels, and Avelogic offers free on-site demos.</p></details></div>
   </div>
 </section>
 
-<!-- LATEST GUIDES -->
-<section id="guides">
-  <div class="container">
-    <div class="label">From the blog</div>
-    <h2 class="stitle">Singapore payroll &amp; HR guides</h2>
-    <p class="ssub">Plain-English guides to CPF, IRAS, MOM rules and leave, checked against official sources.</p>
-    <div class="card-grid"><a class="post-card" href="blog/cpf-contribution-rates-singapore.html"><span class="cat">Payroll & CPF</span><h3>CPF contribution rates for employers in 2026, and what changes in 2027</h3><p>Current CPF contribution rates by age for 2026, the $8,000 Ordinary Wage ceiling, the senior worker increases from 1 January 2027, SDL, self-help group funds and payment deadlines.</p><span class="meta">8 min read</span></a><a class="post-card" href="blog/ir8a-auto-inclusion-scheme-guide.html"><span class="cat">Tax & IRAS</span><h3>IR8A and the Auto-Inclusion Scheme: a filing guide for Singapore employers</h3><p>Who must file IR8A under the IRAS Auto-Inclusion Scheme, the 1 March deadline, which forms you need (IR8S is discontinued), how to submit, IR21 for foreign employees, and the penalties.</p><span class="meta">7 min read</span></a><a class="post-card" href="blog/school-phone-storage-moe-rules.html"><span class="cat">For Schools</span><h3>Phone storage for secondary schools under MOE's 2026 rules: options compared</h3><p>What MOE's 2026 rules on phones and smartwatches in secondary schools require, how schools store devices in practice, and a comparison of lockers, collection bags and other storage options.</p><span class="meta">7 min read</span></a></div>
-    <p style="margin-top:22px;"><a class="panel-more" style="margin-left:0" href="blog/index.html">See all guides →</a></p>
+<!-- ABOUT -->
+<section id="company" class="h-sec h-alt">
+  <div class="h-wrap h-about">
+    <div>
+      <h2 class="h-title">The Singapore company behind HRKaki</h2>
+      <p>Avelogic Pte Ltd was founded in Singapore on 30 March 2006 to give SMEs the payroll and HR tools large companies have, at a price that makes sense, with someone to call when payroll gets complicated.</p>
+      <p class="h-addr"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg> 7 Gambas Crescent #03-07, Ark@Gambas, Singapore 757087. UEN 200604587R.</p>
+    </div>
+    <dl class="h-stats">
+      <div><dt>2006</dt><dd>Founded in Singapore</dd></div>
+      <div><dt>20 years</dt><dd>Singapore payroll experience</dd></div>
+      <div><dt>100%</dt><dd>Developed and supported locally</dd></div>
+    </dl>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="cta-banner">
+<section class="cta-banner" id="get-started">
   <div class="container" style="max-width:660px;text-align:center;">
-    <div class="label" style="color:var(--teal);text-align:center;">Get Started</div>
     <h2>Get your HR in order, with a kaki who shows up.</h2>
-    <p>Join the Singapore companies that run payroll on HRKaki.</p>
+    <p>Free data migration and Singapore-based support.</p>
     <div class="cta-actions">
-      <a href="contact.html" class="btn btn-primary btn-lg">Book a Demo</a>
+      <a href="contact.html" class="btn btn-primary btn-lg">Book a demo</a>
       <a href="tel:+6563671128" class="btn btn-outline-w btn-lg">Call +65 6367 1128</a>
     </div>
-    <p style="font-size:12px;color:rgba(255,255,255,.35);margin-top:16px;">No hidden fees · Free data migration · Singapore-based support</p>
   </div>
 </section>
 </main>
@@ -1201,38 +652,10 @@
 </footer>
 
 <script>
-function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
-function showProduct(id,btn){
-  document.querySelectorAll('.product-panel').forEach(p=>p.classList.toggle('active',p.id===id));
-  document.querySelectorAll('.pnav-btn').forEach(b=>{const on=b.getAttribute('aria-controls')===id;b.classList.toggle('active',on);b.setAttribute('aria-selected',on?'true':'false');});
-}
-function openFromHash(h,scroll){
-  const id=(h||'').replace('#','');const p=id&&document.getElementById(id);
-  if(p&&p.classList.contains('product-panel')){showProduct(id);if(scroll)document.getElementById('products').scrollIntoView({behavior:'smooth'});return true;}
-  return false;
-}
-window.addEventListener('DOMContentLoaded',()=>openFromHash(location.hash,true));
-window.addEventListener('hashchange',()=>openFromHash(location.hash,true));
-function showCompanyTab(id,btn){
-  document.querySelectorAll('.ctab-panel').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.ctab').forEach(b=>b.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  btn.classList.add('active');
-}
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click',e=>{
-    const h=a.getAttribute('href');
-    if(openFromHash(h,true)){e.preventDefault();try{history.replaceState(null,'',h);}catch(_){}document.getElementById('mobileMenu').classList.remove('open');return;}
-    const t=h.length>1&&document.querySelector(h);
-    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
-    document.getElementById('mobileMenu').classList.remove('open');
-  });
-});
-const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});},{threshold:.08});
-document.querySelectorAll('.tcard,.step,.pcard,.fitem,.sv-step,.fmod,.cbadge,.co-stat,.vision-card,.team-card,.dc-spec').forEach(el=>{
-  el.style.opacity='0';el.style.transform='translateY(22px)';el.style.transition='opacity 0.5s ease, transform 0.5s ease';
-  obs.observe(el);
-});
+function toggleMenu(){var m=document.getElementById('mobileMenu');var o=m.classList.toggle('open');document.querySelector('.hamburger').setAttribute('aria-expanded',o?'true':'false');}
+(function(){var pages={'payroll-software':1,'employee-self-service':1,'time-attendance-system':1,'payroll-outsourcing':1,'school-phone-locker':1};
+var h=location.hash.replace('#','');if(pages[h]){location.replace(h+'.html');}})();
+document.querySelectorAll('#mobileMenu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mobileMenu').classList.remove('open');});});
 </script>
 <!-- ══ WHATSAPP FLOATING BUTTON ══ -->
 

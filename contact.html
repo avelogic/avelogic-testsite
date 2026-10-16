@@ -76,8 +76,8 @@ a{text-decoration:none;color:inherit;}
 .stat-box:hover{border-color:rgba(242,101,34,.4);}
 .stat-num{font-size:22px;font-weight:700;font-family:'DM Serif Display',serif;color:var(--orange);line-height:1;}
 .stat-lbl{font-size:12px;color:rgba(255,255,255,.5);margin-top:4px;line-height:1.4;}
-.video-wrap{position:relative;padding-bottom:56.25%;height:0;border-radius:12px;overflow:hidden;background:#000;box-shadow:var(--shadow-lg);margin-bottom:20px;flex-shrink:0;border:2px solid rgba(242,101,34,.2);}
-.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+.video-wrap{width:100%;max-width:100%;border-radius:12px;overflow:hidden;background:#000;box-shadow:var(--shadow-lg);margin:0 0 20px;flex-shrink:0;border:2px solid rgba(242,101,34,.2);}
+.video-wrap iframe{display:block;width:100%;height:auto;aspect-ratio:16/9;border:0;}
 .key-points{display:flex;flex-direction:column;gap:8px;margin-bottom:20px;}
 .kp{display:flex;align-items:flex-start;gap:8px;font-size:15px;color:rgba(255,255,255,.7);line-height:1.5;}
 .kp::before{content:'✓';color:var(--orange);font-weight:700;flex-shrink:0;margin-top:1px;}
@@ -149,7 +149,7 @@ a{text-decoration:none;color:inherit;}
     <div class="stats-row">
       <div class="stat-box"><div class="stat-num">100%</div><div class="stat-lbl">Developed &amp; supported in Singapore</div></div>
       <div class="stat-box"><div class="stat-num">2006</div><div class="stat-lbl">Incorporated in Singapore</div></div>
-      <div class="stat-box"><div class="stat-num">SG</div><div class="stat-lbl">Data stored on AWS Singapore</div></div>
+      <div class="stat-box"><div class="stat-num">SG</div><div class="stat-lbl">Data stored in Singapore</div></div>
       <div class="stat-box"><div class="stat-num">A</div><div class="stat-lbl">ImmuniWeb Security Grade</div></div>
     </div>
     <!-- VIDEO PLACEHOLDER: when the new HRKaki video is ready, paste its YouTube embed here, e.g.
@@ -160,7 +160,7 @@ a{text-decoration:none;color:inherit;}
       <div class="kp">Direct IRAS AIS submission — IR8A, Appendix 8A/8B, IR21 via IRAS API</div>
       <div class="kp">eLeave, eClaims, ePayslip and IR8A on web, iOS and Android</div>
       <div class="kp">Singpass login for staff · two-factor login for admins · private, encrypted database in Singapore</div>
-      <div class="kp">Mobile attendance by Bluetooth beacon or GPS, with AWS facial recognition</div>
+      <div class="kp">Mobile attendance by Bluetooth beacon or GPS, with facial recognition</div>
       <div class="kp">Model 1010-LITE Facial Recognition Device — &lt;1s verify, mask-friendly</div>
       <div class="kp">OED Survey direct submission to MOM · MOM-compliant itemised payslips</div>
       <div class="kp">Singapore-based support: Mon–Fri 9am–6pm · Phone, email &amp; remote access</div>

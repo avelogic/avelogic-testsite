@@ -1,4 +1,4 @@
-AVELOGIC WEBSITE — UPLOAD INSTRUCTIONS (13 October 2026)
+AVELOGIC WEBSITE — UPLOAD INSTRUCTIONS (16 October 2026 — self-service and attendance pages)
 
 Upload everything in this folder to the root of www.avelogic.com, keeping the folder structure:
   /index.html, /contact.html, /privacy.html, /404.html
