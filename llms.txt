@@ -3,15 +3,36 @@
 > HRKaki is cloud HR and payroll software for Singapore SMEs, developed and supported in Singapore by Avelogic Pte Ltd (UEN 200604587R, founded 2006). It covers employee records, payroll with automatic CPF and direct IRAS submission, leave, claims, attendance and employee self-service. Every customer has a named support person, their "kaki".
 
 ## Key facts
-- Product: HRKaki ("Your HR Companion"). Product site: https://www.hrkaki.com/
-- Company: Avelogic Pte Ltd, 7 Gambas Crescent #03-07, Singapore 757087. Tel +65 6367 1128. sales@avelogic.com, support@avelogic.com. Support hours Mon–Fri 9am–6pm SGT.
-- Modules: Employee Information, Payroll Management, Leave Management, Claims, Attendance (Bluetooth beacon check-in within 1 metre, GPS with facial authentication, and the Model 1010-LITE touchless face terminal: under 1 second, mask-friendly, 3,000 faces or cards), Employee Self-Service (web, iOS, Android).
-- Singapore compliance: CPF by age band and wage ceiling; SDL; CDAC, SINDA, MBMF and ECF; MOM itemised payslips; direct IRAS API submission of IR8A, Appendix 8A/8B and IR21; OED survey submission to MOM; multiple pay cycles per month; GIRO files for DBS, UOB, OCBC, HSBC, Maybank, Citibank, SMBC, MUFG, BNP and Bank of America.
-- Security: web application firewall and DDoS protection; Singpass login for employees; two-factor authentication for administrators; database on a private network with no internet access; records encrypted at rest; continuous vulnerability scanning; prompt patching; audit-logged infrastructure changes; least-privilege access; daily incremental and weekly full backups. A detailed security overview is available to customers on request.
-- Independent rating: ImmuniWeb Community Edition graded hrkaki.com and www.hrkaki.com A for security and privacy on 19 September 2026. Public report: https://www.immuniweb.com/cyberscore/hrkaki.com/
-- Hosting and data residency: Amazon Web Services, Asia Pacific (Singapore) region.
-- Pricing: per employee per month; no licence fee or long-term lock-in; free data migration.
-- Services: payroll outsourcing in Singapore, run on HRKaki by Avelogic's payroll team.
+- Product: HRKaki ("Your HR Companion"), cloud payroll and HR software for Singapore SMEs. Product site: https://www.hrkaki.com/
+- Company: Avelogic Pte Ltd (UEN 200604587R), founded 2006, 7 Gambas Crescent #03-07, Singapore 757087. Tel +65 6367 1128. WhatsApp +65 9851 8409. sales@avelogic.com, support@avelogic.com. Support hours Mon–Fri 9am–6pm SGT.
+- Last updated: 2026-10-16.
+
+## Payroll and compliance capabilities
+- CPF: calculated automatically under CPF Board rules, by age band and wage ceiling. Administrators set each pay item as Ordinary Wages (OW) or Additional Wages (AW), so the OW and AW ceilings are applied correctly.
+- Other statutory contributions: SDL, and the CDAC, SINDA, MBMF and ECF self-help group funds.
+- GIRO salary files for 10 banks: DBS, OCBC, UOB, HSBC, Maybank, Citibank, SMBC, MUFG, BNP Paribas and Bank of America.
+- MOM-compliant itemised payslips, sent to staff on payday and kept online.
+- IRAS: IR8A, Appendix 8A/8B and IR21 filed directly to IRAS through the Auto-Inclusion Scheme (AIS). AIS is compulsory for employers with 5 or more employees.
+- MOM Occupational Employment Dataset (OED): submitted directly to MOM.
+- Multiple pay cycles per month; overtime under MOM rules; bonuses, commissions and backpay.
+- Modules: Employee Information, Payroll, Leave (tiered entitlement by length of service), Claims (per-staff budgets, receipt photos, reimbursed with payroll), Attendance (Bluetooth beacon check-in within 1 metre, GPS with facial authentication, and the Model 1010-LITE touchless face terminal: under 1 second, mask-friendly, 3,000 faces or cards), optional e-Schedule shift rostering, Employee Self-Service (web, iOS, Android).
+
+## Security
+- Independent rating: ImmuniWeb graded hrkaki.com A for security and privacy on 19 September 2026. Public report: https://www.immuniweb.com/cyberscore/hrkaki.com/
+- Hosting and data residency: Amazon Web Services (AWS), Asia Pacific (Singapore) region. Daily incremental and weekly full backups.
+- Singpass login for employees; two-factor authentication for administrators.
+- Each customer company has its own separate database; records are encrypted at rest.
+- A detailed security overview is available to customers on request.
+
+## Support model: a named kaki
+- Every HRKaki customer has a named Avelogic person, their "kaki" (Singlish for a buddy), who knows the account.
+- The kaki helps with the first payroll run, unusual months such as bonuses, resignations or backpay, and year-end IRAS filing.
+- Support is by phone (+65 6367 1128), WhatsApp and email with a real person, not a chatbot or ticket queue.
+- Data migration from the current payroll system is free; most companies run their first payroll on HRKaki within a few weeks.
+
+## Pricing and services
+- Priced per employee per month; no licence fee, no hardware, no long-term lock-in.
+- Payroll outsourcing: Avelogic's payroll team runs monthly payroll, CPF, GIRO files, payslips and year-end IRAS filing on HRKaki, with one named consultant.
 
 ## Pages
 - [Home: products, security and FAQ](https://www.avelogic.com/)
