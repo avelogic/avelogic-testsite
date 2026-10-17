@@ -35,28 +35,28 @@
 - Payroll outsourcing: Avelogic's payroll team runs monthly payroll, CPF, GIRO files, payslips and year-end IRAS filing on HRKaki, with one named consultant.
 
 ## Pages
-- [Home: products, security and FAQ](https://avelogic.com/)
-- [Payroll & HR software (HRKaki)](https://avelogic.com/payroll-software.html)
-- [Employee self-service portal (HRKaki e-Services)](https://avelogic.com/employee-self-service.html)
-- [Time attendance system (HRKaki Attendance)](https://avelogic.com/time-attendance-system.html)
-- [Payroll outsourcing Singapore](https://avelogic.com/payroll-outsourcing.html)
-- [School phone locker](https://avelogic.com/school-phone-locker.html)
-- [Book a demo / contact](https://avelogic.com/contact.html)
-- [Data protection policy](https://avelogic.com/privacy.html)
+- [Home: products, security and FAQ](https://www.avelogic.com/)
+- [Payroll & HR software (HRKaki)](https://www.avelogic.com/payroll-software.html)
+- [Employee self-service portal (HRKaki e-Services)](https://www.avelogic.com/employee-self-service.html)
+- [Time attendance system (HRKaki Attendance)](https://www.avelogic.com/time-attendance-system.html)
+- [Payroll outsourcing Singapore](https://www.avelogic.com/payroll-outsourcing.html)
+- [School phone locker](https://www.avelogic.com/school-phone-locker.html)
+- [Book a demo / contact](https://www.avelogic.com/contact.html)
+- [Data protection policy](https://www.avelogic.com/privacy.html)
 
 ## Guides (blog)
-- [CPF contribution rates for employers in 2026, and what changes in 2027](https://avelogic.com/blog/cpf-contribution-rates-singapore.html): Current CPF contribution rates by age for 2026, the $8,000 Ordinary Wage ceiling, the senior worker increases from 1 January 2027, SDL, self-help group funds and payment deadlines.
-- [IR8A and the Auto-Inclusion Scheme: a filing guide for Singapore employers](https://avelogic.com/blog/ir8a-auto-inclusion-scheme-guide.html): Who must file IR8A under the IRAS Auto-Inclusion Scheme, the 1 March deadline, which forms you need (IR8S is discontinued), how to submit, IR21 for foreign employees, and the penalties.
-- [MOM itemised payslip requirements: the 12 items every payslip needs](https://avelogic.com/blog/mom-itemised-payslip-requirements.html): Who must issue itemised payslips in Singapore, the 12 items MOM requires, the 3-working-day deadline, record-keeping rules, overtime basics and penalties for non-compliance.
-- [Leave entitlement in Singapore: a 2026 guide for employers](https://avelogic.com/blog/leave-entitlement-singapore.html): Annual, sick, childcare, maternity, paternity and shared parental leave in Singapore for 2026, including the childcare leave changes announced at the 2026 National Day Rally.
-- [Payroll outsourcing vs in-house payroll: how Singapore SMEs should decide](https://avelogic.com/blog/payroll-outsourcing-vs-in-house.html): Outsourced vs in-house payroll in Singapore: cost, compliance risk, confidentiality, PDPA data intermediary rules, and what stays with the employer either way.
-- [Phone storage for secondary schools under MOE's 2026 rules: options compared](https://avelogic.com/blog/school-phone-storage-moe-rules.html): What MOE's 2026 rules on phones and smartwatches in secondary schools require, how schools store devices in practice, and a comparison of lockers, collection bags and other storage options.
-- [How to stop buddy punching: time attendance options compared](https://avelogic.com/blog/stop-buddy-punching-attendance.html): What buddy punching is, why it costs Singapore employers more than they think, and how cards, fingerprint, face terminals, GPS and beacon mobile attendance compare at preventing it.
-- [How to calculate overtime pay in Singapore under MOM rules](https://avelogic.com/blog/overtime-pay-calculation-singapore.html): Who is entitled to overtime pay in Singapore, the hourly rate formula, the $2,600 cap for non-workmen, the 72-hour monthly limit, rest day pay and the 14-day payment deadline, with worked examples.
-- [Public holiday pay and time off in lieu in Singapore](https://avelogic.com/blog/public-holiday-pay-singapore.html): Singapore's 11 paid public holidays, what to pay staff who work on one, what happens when a holiday falls on a rest day or non-working day, time off in lieu, and when holiday pay can be withheld.
-- [Key Employment Terms (KETs): what Singapore employers must give in writing](https://avelogic.com/blog/key-employment-terms-singapore.html): Who must receive written Key Employment Terms, the 14-day deadline, the 18 items MOM lists, acceptable formats, penalties, and what the Workplace Fairness Act means for hiring.
-- [AWS, year-end bonuses and CPF on Additional Wages: an employer's guide](https://avelogic.com/blog/aws-bonus-cpf-additional-wages.html): Whether AWS (the 13th-month bonus) is compulsory in Singapore, how pro-rating works, how CPF applies to bonuses through the Additional Wage ceiling, with worked examples, and how bonuses are taxed.
-- [Notice periods, final salary and leaving employees: Singapore employer guide](https://avelogic.com/blog/notice-period-final-salary-singapore.html): Default notice periods under the Employment Act, salary in lieu of notice, when final salary must be paid, retrenchment benefits and notifications, unused leave, IR21 and wrongful dismissal claims.
+- [CPF contribution rates for employers in 2026, and what changes in 2027](https://www.avelogic.com/blog/cpf-contribution-rates-singapore.html): Current CPF contribution rates by age for 2026, the $8,000 Ordinary Wage ceiling, the senior worker increases from 1 January 2027, SDL, self-help group funds and payment deadlines.
+- [IR8A and the Auto-Inclusion Scheme: a filing guide for Singapore employers](https://www.avelogic.com/blog/ir8a-auto-inclusion-scheme-guide.html): Who must file IR8A under the IRAS Auto-Inclusion Scheme, the 1 March deadline, which forms you need (IR8S is discontinued), how to submit, IR21 for foreign employees, and the penalties.
+- [MOM itemised payslip requirements: the 12 items every payslip needs](https://www.avelogic.com/blog/mom-itemised-payslip-requirements.html): Who must issue itemised payslips in Singapore, the 12 items MOM requires, the 3-working-day deadline, record-keeping rules, overtime basics and penalties for non-compliance.
+- [Leave entitlement in Singapore: a 2026 guide for employers](https://www.avelogic.com/blog/leave-entitlement-singapore.html): Annual, sick, childcare, maternity, paternity and shared parental leave in Singapore for 2026, including the childcare leave changes announced at the 2026 National Day Rally.
+- [Payroll outsourcing vs in-house payroll: how Singapore SMEs should decide](https://www.avelogic.com/blog/payroll-outsourcing-vs-in-house.html): Outsourced vs in-house payroll in Singapore: cost, compliance risk, confidentiality, PDPA data intermediary rules, and what stays with the employer either way.
+- [Phone storage for secondary schools under MOE's 2026 rules: options compared](https://www.avelogic.com/blog/school-phone-storage-moe-rules.html): What MOE's 2026 rules on phones and smartwatches in secondary schools require, how schools store devices in practice, and a comparison of lockers, collection bags and other storage options.
+- [How to stop buddy punching: time attendance options compared](https://www.avelogic.com/blog/stop-buddy-punching-attendance.html): What buddy punching is, why it costs Singapore employers more than they think, and how cards, fingerprint, face terminals, GPS and beacon mobile attendance compare at preventing it.
+- [How to calculate overtime pay in Singapore under MOM rules](https://www.avelogic.com/blog/overtime-pay-calculation-singapore.html): Who is entitled to overtime pay in Singapore, the hourly rate formula, the $2,600 cap for non-workmen, the 72-hour monthly limit, rest day pay and the 14-day payment deadline, with worked examples.
+- [Public holiday pay and time off in lieu in Singapore](https://www.avelogic.com/blog/public-holiday-pay-singapore.html): Singapore's 11 paid public holidays, what to pay staff who work on one, what happens when a holiday falls on a rest day or non-working day, time off in lieu, and when holiday pay can be withheld.
+- [Key Employment Terms (KETs): what Singapore employers must give in writing](https://www.avelogic.com/blog/key-employment-terms-singapore.html): Who must receive written Key Employment Terms, the 14-day deadline, the 18 items MOM lists, acceptable formats, penalties, and what the Workplace Fairness Act means for hiring.
+- [AWS, year-end bonuses and CPF on Additional Wages: an employer's guide](https://www.avelogic.com/blog/aws-bonus-cpf-additional-wages.html): Whether AWS (the 13th-month bonus) is compulsory in Singapore, how pro-rating works, how CPF applies to bonuses through the Additional Wage ceiling, with worked examples, and how bonuses are taxed.
+- [Notice periods, final salary and leaving employees: Singapore employer guide](https://www.avelogic.com/blog/notice-period-final-salary-singapore.html): Default notice periods under the Employment Act, salary in lieu of notice, when final salary must be paid, retrenchment benefits and notifications, unused leave, IR21 and wrongful dismissal claims.
 
 ## Avelogic Phone Locker (for schools)
 - Keyless steel phone locker built for the MOE phone-free classroom in Singapore. 45 numbered slots (3 rows of 15), curved protective dividers, heavy-duty powder-coated steel, carry handle; portable or wall-mounted.
