@@ -5,7 +5,7 @@
 ## Key facts
 - Product: HRKaki ("Your HR Companion"), cloud payroll and HR software for Singapore SMEs. Product site: https://www.hrkaki.com/
 - Company: Avelogic Pte Ltd (UEN 200604587R), founded 2006, 7 Gambas Crescent #03-07, Singapore 757087. Tel +65 6367 1128. WhatsApp +65 9851 8409. sales@avelogic.com, support@avelogic.com. Support hours Mon–Fri 9am–6pm SGT.
-- Last updated: 2026-10-16.
+- Last updated: 2026-10-26.
 
 ## Payroll and compliance capabilities
 - CPF: calculated automatically under CPF Board rules, by age band and wage ceiling. Administrators set each pay item as Ordinary Wages (OW) or Additional Wages (AW), so the OW and AW ceilings are applied correctly.
@@ -42,10 +42,12 @@
 - [Payroll outsourcing Singapore](https://www.avelogic.com/payroll-outsourcing.html)
 - [School phone locker](https://www.avelogic.com/school-phone-locker.html)
 - [Book a demo / contact](https://www.avelogic.com/contact.html)
+- [Editorial policy: how the Avelogic Payroll Team writes and reviews its guides](https://www.avelogic.com/editorial-policy.html)
 - [Data protection policy](https://www.avelogic.com/privacy.html)
 
 ## Guides (blog)
-- [CPF contribution rates for employers in 2026, and what changes in 2027](https://www.avelogic.com/blog/cpf-contribution-rates-singapore.html): Current CPF contribution rates by age for 2026, the $8,000 Ordinary Wage ceiling, the senior worker increases from 1 January 2027, SDL, self-help group funds and payment deadlines.
+Written and reviewed by the Avelogic Payroll Team against CPF Board, IRAS, MOM, MOE and PDPC sources. Each guide shows its last-reviewed date; all guides are reviewed each January.
+- [CPF contribution rates for employers in 2026, and what changes in 2027](https://www.avelogic.com/blog/cpf-contribution-rates-singapore.html): Current CPF contribution rates by age for 2026, the $8,000 Ordinary Wage ceiling (unchanged in CPF's 2027 rate tables), the senior worker increases from 1 January 2027, SDL, self-help group funds, payment deadlines and five worked examples. Last reviewed 26 October 2026.
 - [IR8A and the Auto-Inclusion Scheme: a filing guide for Singapore employers](https://www.avelogic.com/blog/ir8a-auto-inclusion-scheme-guide.html): Who must file IR8A under the IRAS Auto-Inclusion Scheme, the 1 March deadline, which forms you need (IR8S is discontinued), how to submit, IR21 for foreign employees, and the penalties.
 - [MOM itemised payslip requirements: the 12 items every payslip needs](https://www.avelogic.com/blog/mom-itemised-payslip-requirements.html): Who must issue itemised payslips in Singapore, the 12 items MOM requires, the 3-working-day deadline, record-keeping rules, overtime basics and penalties for non-compliance.
 - [Leave entitlement in Singapore: a 2026 guide for employers](https://www.avelogic.com/blog/leave-entitlement-singapore.html): Annual, sick, childcare, maternity, paternity and shared parental leave in Singapore for 2026, including the childcare leave changes announced at the 2026 National Day Rally.
